@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.border-df {
+  border-color: #ddd;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+.Pagearea {
+  padding: 0 10%;
+}

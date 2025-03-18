@@ -1,0 +1,6 @@
+.Navigation .Pages .pageLink {
+  transition: all 0.3s;
+}
+.Navigation .Pages .Active {
+  background-color: #eff2ff;
+}
