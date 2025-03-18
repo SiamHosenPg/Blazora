@@ -4,9 +4,18 @@
   border-color: #ddd;
 }
 
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
 body {
   background-color: #f3f3f3;
 }
+
+img {
+  object-fit: cover;
+}
+
 .Pagearea {
   padding: 0 10%;
 }

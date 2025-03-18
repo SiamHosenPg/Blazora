@@ -1,0 +1,81 @@
+[
+  {
+    "post_id": "101",
+    "userid": "1",
+    "text": "Enjoying a beautiful sunset!",
+    "media": "/post/1.jpg",
+    "post_date": "2025-03-18T18:30:00Z",
+    "location": "California, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 120,
+        "comments_count": 5,
+        "shares_count": 10
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "201",
+        "comment_text": "Amazing view!",
+        "userid": "2"
+      },
+      {
+        "comment_id": "202",
+        "comment_text": "Wish I was there!",
+        "userid": "3"
+      }
+    ]
+  },
+  {
+    "post_id": "102",
+    "userid": "2",
+    "text": "My latest artwork! 🎨",
+    "media": "/post/2.jpg",
+    "post_date": "2025-03-17T14:20:00Z",
+    "location": "New York, USA",
+    "post_privacy": "Friends",
+    "engagement": [
+      {
+        "like_count": 200,
+        "comments_count": 10,
+        "shares_count": 15
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "203",
+        "comment_text": "This is stunning!",
+        "userid": "4"
+      },
+      {
+        "comment_id": "204",
+        "comment_text": "Incredible details!",
+        "userid": "1"
+      }
+    ]
+  },
+  {
+    "post_id": "103",
+    "userid": "3",
+    "text": "Hiking through the mountains! ⛰️",
+    "media": "/post/3.jpg",
+    "post_date": "2025-03-16T09:15:00Z",
+    "location": "Colorado, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 300,
+        "comments_count": 8,
+        "shares_count": 20
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "205",
+        "comment_text": "That looks like an adventure!",
+        "userid": "2"
+      }
+    ]
+  }
+]
