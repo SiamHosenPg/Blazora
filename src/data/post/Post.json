@@ -4,7 +4,7 @@
     "userid": "1",
     "text": "Enjoying a beautiful sunset!",
     "media": "/post/1.jpg",
-    "post_date": "2025-03-18T18:30:00Z",
+    "post_date": "2025-03-18",
     "location": "California, USA",
     "post_privacy": "Public",
     "engagement": [
@@ -32,7 +32,7 @@
     "userid": "2",
     "text": "My latest artwork! 🎨",
     "media": "/post/2.jpg",
-    "post_date": "2025-03-17T14:20:00Z",
+    "post_date": "2025-03-17",
     "location": "New York, USA",
     "post_privacy": "Friends",
     "engagement": [
@@ -60,7 +60,7 @@
     "userid": "3",
     "text": "Hiking through the mountains! ⛰️",
     "media": "/post/3.jpg",
-    "post_date": "2025-03-16T09:15:00Z",
+    "post_date": "2025-03-16",
     "location": "Colorado, USA",
     "post_privacy": "Public",
     "engagement": [
@@ -75,6 +75,98 @@
         "comment_id": "205",
         "comment_text": "That looks like an adventure!",
         "userid": "2"
+      }
+    ]
+  },
+  {
+    "post_id": "104",
+    "userid": "4",
+    "text": "Sunset by the beach 🌅",
+    "media": "/post/4.jpg",
+    "post_date": "2025-03-18",
+    "location": "Malibu, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 250,
+        "comments_count": 5,
+        "shares_count": 15
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "206",
+        "comment_text": "Wow, that view is amazing!",
+        "userid": "5"
+      }
+    ]
+  },
+  {
+    "post_id": "105",
+    "userid": "6",
+    "text": "Exploring the city streets! 🏙️",
+    "media": "/post/5.jpg",
+    "post_date": "2025-03-19",
+    "location": "New York, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 320,
+        "comments_count": 10,
+        "shares_count": 25
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "207",
+        "comment_text": "NYC never sleeps! Have fun!",
+        "userid": "7"
+      }
+    ]
+  },
+  {
+    "post_id": "106",
+    "userid": "8",
+    "text": "Camping under the stars! ✨🔥",
+    "media": "/post/6.jpg",
+    "post_date": "2025-03-20",
+    "location": "Yosemite National Park, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 280,
+        "comments_count": 7,
+        "shares_count": 18
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "208",
+        "comment_text": "That must be a breathtaking experience!",
+        "userid": "9"
+      }
+    ]
+  },
+  {
+    "post_id": "107",
+    "userid": "10",
+    "text": "Road trip with the best people! 🚗💨",
+    "media": "/post/7.jpg",
+    "post_date": "2025-03-21",
+    "location": "Route 66, USA",
+    "post_privacy": "Public",
+    "engagement": [
+      {
+        "like_count": 350,
+        "comments_count": 12,
+        "shares_count": 30
+      }
+    ],
+    "comments": [
+      {
+        "comment_id": "209",
+        "comment_text": "Road trips are the best way to make memories!",
+        "userid": "11"
       }
     ]
   }
