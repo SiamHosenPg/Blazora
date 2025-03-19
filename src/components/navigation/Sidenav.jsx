@@ -13,7 +13,7 @@ const Sidenav = () => {
           <div>
             <img
               className="w-[50px] h-[50px] rounded-full "
-              src="/public/profile/2.jpg"
+              src="/profile/2.jpg"
               alt=""
             />
           </div>

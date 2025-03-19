@@ -25,7 +25,7 @@ const Newsfeed = () => {
                 <div className="left flex items-center justify-start gap-2">
                   <img
                     className="w-[45px] h-[45px] border-df border rounded-full"
-                    src="/public/profile/2.jpg"
+                    src="/profile/2.jpg"
                     alt=""
                   />
                   <div className="text">
@@ -84,7 +84,7 @@ const Newsfeed = () => {
               <div className="CommentsInput flex gap-3 mt-4 items-center ">
                 <img
                   className="w-[40px] h-[40px] rounded-full"
-                  src="/public/profile/2.jpg"
+                  src="/profile/2.jpg"
                   alt=""
                 />
                 <input
@@ -109,7 +109,7 @@ const Newsfeed = () => {
                         >
                           <div className="image">
                             <img
-                              src="/public/profile/2.jpg"
+                              src="profile/2.jpg"
                               className="w-[40px] h-[40px] bg-blue-50 rounded-full"
                               alt=""
                             />
