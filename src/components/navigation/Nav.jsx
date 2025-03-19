@@ -16,30 +16,35 @@ const Nav = () => {
           Blazora
         </div>
         <div className="Pages w-[33%] flex items-center justify-center">
-          <ul className="flex items-center justify-center gap-8 border border-df py-1 px-4 rounded-md">
+          <ul className="flex items-center justify-center gap-4  py-1 px-4 rounded-md">
             <li>
-              <button className=" pageLink Active hover:bg-[#f5f5f5] text-2xl px-4 py-3 rounded-md text-[#555] flex items-center justify-center gap-2">
-                <GrHomeOption />
+              <button className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+                <GrHomeOption className="text-2xl" />
+                <b className="block font-semibold text-sm">Home</b>
               </button>
             </li>
             <li>
-              <button className=" pageLink   hover:bg-[#f5f5f5] text-2xl px-4 py-3 rounded-md text-[#555] flex items-center justify-center gap-2">
-                <MdOutlineExplore />
+              <button className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+                <MdOutlineExplore className="text-2xl" />
+                <b className="block font-semibold text-sm">Explore</b>
               </button>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5] text-2xl px-4 py-3 rounded-md text-[#555] flex items-center justify-center gap-2">
-                <AiOutlineUsergroupAdd />
+              <button className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+                <AiOutlineUsergroupAdd className="text-2xl" />
+                <b className="block font-semibold text-sm">Friends</b>
               </button>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5] text-2xl px-4 py-3 rounded-md text-[#555] flex items-center justify-center gap-2">
-                <FiMessageCircle />
+              <button className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+                <FiMessageCircle className="text-2xl" />
+                <b className="block font-semibold text-sm">Message</b>
               </button>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5] text-2xl px-4 py-3 rounded-md text-[#555] flex items-center justify-center gap-2">
-                <MdOutlineNotificationsNone />
+              <button className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+                <MdOutlineNotificationsNone className="text-2xl" />
+                <b className="block font-semibold text-sm">Notification</b>
               </button>
             </li>
           </ul>
@@ -47,12 +52,12 @@ const Nav = () => {
         <div className="ProfileMenu w-[33%] flex items-center justify-end gap-2">
           <div className="image">
             <img
-              className="w-[40px] h-[40px] rounded-full bg-blue-50"
-              src=""
+              className="w-[37px] h-[37px] rounded-full bg-blue-50"
+              src="/public/profile/2.jpg"
               alt=""
             />
           </div>
-          <div className="text font-medium">Siam Hosen</div>
+          <div className="text font-semibold">Siam Hosen</div>
           <FaCaretDown />
         </div>
       </div>

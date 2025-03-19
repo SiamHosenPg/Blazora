@@ -9,13 +9,14 @@ import { MdBookmarkBorder } from "react-icons/md";
 import { LuSendHorizontal } from "react-icons/lu";
 import { MdOutlinePublic } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
+import "./Newsfeed.css";
 
 const Newsfeed = () => {
   const { postData } = useContext(PostContext);
   const { userData } = useContext(UserContext);
 
   return (
-    <div>
+    <div className="Newsfeed">
       <ul>
         {postData &&
           postData.map((item, index) => (
@@ -24,7 +25,7 @@ const Newsfeed = () => {
                 <div className="left flex items-center justify-start gap-2">
                   <img
                     className="w-[45px] h-[45px] border-df border rounded-full"
-                    src=""
+                    src="/public/profile/2.jpg"
                     alt=""
                   />
                   <div className="text">
@@ -62,15 +63,16 @@ const Newsfeed = () => {
                     <div className="left flex items-center justify-start gap-4">
                       <div className="flex gap-1 items-center">
                         <AiOutlineFire className="text-2xl mr-1" />
-                        {count.like_count} <div className="">Like</div>
+                        {count.like_count} <div className="text-sm">Like</div>
                       </div>
                       <div className="flex gap-1 items-center">
                         <FaRegComments className="text-2xl mr-1" />
-                        {count.comments_count} <div className="">Comments</div>
+                        {count.comments_count}{" "}
+                        <div className="text-sm">Comments</div>
                       </div>
                       <div className="flex gap-1 items-center">
                         {count.shares_count}
-                        <div className="">Shear</div>
+                        <div className="text-sm">Shear</div>
                       </div>
                     </div>
                     <button>
@@ -80,7 +82,11 @@ const Newsfeed = () => {
                 );
               })}
               <div className="CommentsInput flex gap-3 mt-4 items-center ">
-                <img className="w-[45px] h-[45px] rounded-full" src="" alt="" />
+                <img
+                  className="w-[40px] h-[40px] rounded-full"
+                  src="/public/profile/2.jpg"
+                  alt=""
+                />
                 <input
                   type="text"
                   className=" bg-[#f5f5f5] rounded-full px-5 py-3 text-sm w-[300px]"
@@ -93,34 +99,38 @@ const Newsfeed = () => {
               </div>
               <div className=" mt-5">
                 <b> Comments</b>
-                <div>
+                <div className=" Comments">
                   {item.comments &&
                     item.comments.map((comm, index) => {
                       return (
                         <div
-                          className="flex items-start gap-2 mt-5 border-b border-df pb-3"
+                          className=" commentsitems flex items-start gap-2 mt-5 border-b border-df pb-3"
                           key={index}
                         >
                           <div className="image">
                             <img
-                              src=""
+                              src="/public/profile/2.jpg"
                               className="w-[40px] h-[40px] bg-blue-50 rounded-full"
                               alt=""
                             />
                           </div>
-                          <div className="texts">
-                            <b className="block font-medium text-sm">Shium</b>
+                          <div className="texts max-w-[370px] bg-[#f3f3f3] px-5 py-3 rounded-xl rounded-tl-none">
+                            <b className="block font-medium text-sm">
+                              Siam Hosen
+                            </b>
                             <div className="flex items-start gap-2">
-                              <span className="block py-2 px-4 bg-[#f3f3f3] rounded-xl text-sm ">
+                              <span className="block rounded-xl text-sm mt-1">
                                 {comm.comment_text}
                               </span>
-                              <button className="mt-2 flex ">
-                                <AiOutlineFire className="text-lg" />
-                              </button>
-                              <button className="text-sm mt-2 text-[#666]">
-                                Reply
-                              </button>
                             </div>
+                          </div>
+                          <div className="flex items-center mt-3 gap-3">
+                            <button className=" flex ">
+                              <AiOutlineFire className="text-lg" />
+                            </button>
+                            <button className="text-sm text-[#666]">
+                              Reply
+                            </button>
                           </div>
                         </div>
                       );
