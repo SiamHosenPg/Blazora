@@ -18,5 +18,27 @@ img {
 }
 
 .Pagearea {
-  padding: 0 10%;
+  width: 1500px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1900px) {
+  .Pagearea {
+    width: 1500px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Pagearea {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Pagearea {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }

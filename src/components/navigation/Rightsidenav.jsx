@@ -20,7 +20,7 @@ const Rightsidenav = () => {
               return (
                 <li
                   key={index}
-                  className="flex items-center justify-between mb-3 hover:bg-white px-3 py-2 rounded-lg"
+                  className="flex items-center justify-between mb-1 hover:bg-white px-3 py-2 rounded-lg"
                 >
                   <div className="flex items-center gap-2">
                     <img

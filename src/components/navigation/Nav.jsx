@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <div className=" Navigation w-full bg-white h-[78px] border-df border-b fixed">
       <div className="Pagearea h-full flex items-center justify-between ">
-        <div className="Logo w-[33%] text-3xl text-[#444] font-bold">
+        <div className="Logo  w-[33%] text-2xl text-[#444] font-bold">
           Blazora
         </div>
         <div className="Pages w-[33%] flex items-center justify-center">

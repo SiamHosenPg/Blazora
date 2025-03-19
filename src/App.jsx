@@ -15,7 +15,7 @@ function App() {
           <NewsProvider>
             <Nav />
             <div className="Hidden h-[100px]"></div>
-            <div className="flex Pagearea min-h-screen gap-14 bg-gray-100">
+            <div className="flex Pagearea min-h-screen xl:gap-6 2xl:gap-14 bg-gray-100">
               {/* Left Sidebar */}
               <nav className="w-3/12 bg-white  sticky top-[100px]  h-[calc(100vh_-_120px)] rounded-lg">
                 <Sidenav />
