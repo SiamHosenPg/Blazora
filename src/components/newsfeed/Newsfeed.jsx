@@ -81,7 +81,7 @@ const Newsfeed = () => {
                   </div>
                 );
               })}
-              <div className="CommentsInput flex gap-3 mt-4 items-center ">
+              <div className="CommentsInput flex gap-3 mt-3 items-center ">
                 <img
                   className="w-[40px] h-[40px] rounded-full"
                   src="/profile/2.jpg"
@@ -104,7 +104,7 @@ const Newsfeed = () => {
                     item.comments.map((comm, index) => {
                       return (
                         <div
-                          className=" commentsitems flex items-start gap-2 mt-5 border-b border-df pb-3"
+                          className=" commentsitems flex items-start gap-2 mt-3 border-b border-df pb-3"
                           key={index}
                         >
                           <div className="image">
