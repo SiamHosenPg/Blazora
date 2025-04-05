@@ -1,29 +1,72 @@
 [
   {
-    "newsid": "001",
+    "newsid": "3745382",
     "newstitle": "Global Tech Summit 2025 Highlights Innovations in AI and Robotics",
     "newsdescrip": "The Global Tech Summit 2025, held in San Francisco, showcased groundbreaking advancements in artificial intelligence and robotics. Industry leaders, researchers, and tech enthusiasts gathered to discuss the future of automation, deep learning, and machine-human collaboration. Notable presentations included AI-driven healthcare solutions, autonomous vehicles, and next-generation robotic assistants. Experts emphasized ethical considerations, ensuring AI development aligns with human values. The summit also highlighted the growing role of AI in environmental conservation, enhancing energy efficiency, and tackling climate change. Investors showed interest in startups innovating in machine learning and automation. The event concluded with discussions on policy regulations, emphasizing the need for global collaboration in AI ethics and governance. Attendees left with insights into how AI and robotics are shaping the world, driving efficiency, and improving daily life. The conference set the stage for further advancements, fostering a vision of a technologically enhanced future.",
     "authored": "Tech Daily",
     "authorname": "John Smith",
     "newsdate": "2025-03-18",
-    "newsimage": "https://example.com/images/techsummit2025.jpg"
+    "newscategory": ["Technology", "AI", "Robotics", "Innovation"],
+    "newsimage": "/news/truth-social-6739660_640.jpg"
   },
   {
-    "newsid": "002",
+    "newsid": "542656",
     "newstitle": "NASA Confirms Water Presence on Mars, Boosting Hopes for Future Missions",
     "newsdescrip": "NASA's latest mission has confirmed the presence of water molecules on Mars, reigniting enthusiasm for future manned missions to the Red Planet. Scientists analyzed data from the Perseverance rover, detecting water ice beneath the surface of Jezero Crater. This discovery supports the theory that Mars once had vast oceans and a more habitable climate. Experts believe that accessing this water could be a crucial step toward establishing a sustainable human presence on Mars. The research team also found evidence of ancient microbial life, raising profound questions about the potential for extraterrestrial organisms. With these findings, space agencies worldwide are accelerating their Mars exploration plans, considering new robotic missions and eventual human colonization. The news has sparked global interest in interplanetary travel, with private space companies also joining the race to develop advanced space habitats. As technology advances, scientists remain hopeful that Mars could be a stepping stone for deep-space exploration and even missions beyond our solar system.",
     "authored": "Space Exploration News",
     "authorname": "Emily Carter",
     "newsdate": "2025-03-19",
-    "newsimage": "https://example.com/images/marswater.jpg"
+    "newscategory": ["Space", "Science", "Exploration", "Technology"],
+    "newsimage": "/news/nasa.jpg"
   },
   {
-    "newsid": "003",
+    "newsid": "5643215",
     "newstitle": "Global Economy Sees Major Recovery Following Post-Pandemic Challenges",
     "newsdescrip": "The global economy is witnessing a significant rebound as industries recover from the effects of the pandemic. Financial experts report rising GDP growth in multiple countries, driven by technological advancements, increased consumer spending, and international trade agreements. Governments worldwide have introduced stimulus packages, supporting small businesses and boosting job creation. Stock markets have shown consistent gains, with tech and healthcare sectors leading the way. Economists emphasize the importance of sustainable policies to maintain long-term stability. The recovery has also influenced housing markets, with demand for real estate rising in many regions. Despite inflation concerns, analysts believe strategic fiscal policies can ensure continued growth. The International Monetary Fund has revised its global economic forecast upward, reflecting confidence in economic resilience. Industries such as tourism, manufacturing, and digital services have experienced substantial growth, reinforcing optimism for future economic trends. While some challenges remain, experts agree that the world's financial outlook is steadily improving, marking a new era of economic prosperity.",
     "authored": "Finance Weekly",
     "authorname": "Michael Johnson",
     "newsdate": "2025-03-19",
-    "newsimage": "https://example.com/images/economicrecovery.jpg"
+    "newscategory": ["Economy", "Finance", "Business", "Technology"],
+    "newsimage": "/news/glb.jpg"
+  },
+  {
+    "newsid": "8745632",
+    "newstitle": "Breakthrough in Cancer Research: New Treatment Shows 90% Success Rate",
+    "newsdescrip": "Scientists have developed a groundbreaking cancer treatment that has shown a 90% success rate in clinical trials. The new therapy, based on personalized immunotherapy, uses the patient's own immune cells to target and destroy cancer cells. Researchers believe this could revolutionize cancer treatment, offering hope to millions of patients worldwide. The treatment has been approved for further testing and is expected to be available within the next five years. Experts are optimistic about its potential to treat various types of cancer, including those previously considered untreatable.",
+    "authored": "Health Today",
+    "authorname": "Dr. Sarah Lee",
+    "newsdate": "2025-03-20",
+    "newscategory": ["Health", "Science", "Innovation", "Medicine"],
+    "newsimage": "/news/newborn-photography-9292505_640.jpg"
+  },
+  {
+    "newsid": "9823451",
+    "newstitle": "Electric Vehicles Dominate Auto Market as Sales Surge Globally",
+    "newsdescrip": "Electric vehicles (EVs) have taken the global auto market by storm, with sales reaching record highs in 2025. Governments worldwide are offering incentives to promote EV adoption, while automakers are investing heavily in battery technology and charging infrastructure. Analysts predict that EVs will account for 50% of all vehicle sales by 2030. The shift to electric mobility is expected to significantly reduce carbon emissions, contributing to global efforts to combat climate change. Consumers are increasingly drawn to EVs for their efficiency, lower maintenance costs, and environmental benefits.",
+    "authored": "Auto Trends",
+    "authorname": "James Parker",
+    "newsdate": "2025-03-21",
+    "newscategory": ["Technology", "Environment", "Automotive", "Innovation"],
+    "newsimage": "/news/namibia-246621_640.jpg"
+  },
+  {
+    "newsid": "6738294",
+    "newstitle": "Artificial Intelligence Revolutionizes Education with Personalized Learning",
+    "newsdescrip": "AI-powered tools are transforming the education sector by offering personalized learning experiences for students. Adaptive learning platforms analyze individual performance and tailor content to meet each student's needs. Teachers are using AI to automate administrative tasks, allowing them to focus more on teaching. The integration of AI in education is expected to bridge learning gaps, improve student outcomes, and make education more accessible worldwide. However, experts stress the importance of addressing ethical concerns and ensuring data privacy in AI-driven education systems.",
+    "authored": "Education Insights",
+    "authorname": "Linda Martinez",
+    "newsdate": "2025-03-22",
+    "newscategory": ["Education", "AI", "Technology", "Ethics"],
+    "newsimage": "/news/words-2904676_640.jpg"
+  },
+  {
+    "newsid": "4592837",
+    "newstitle": "Global Wildlife Populations Recover Thanks to Conservation Efforts",
+    "newsdescrip": "Conservation programs around the world are yielding positive results, with several endangered species showing signs of recovery. Efforts such as habitat restoration, anti-poaching measures, and community involvement have been instrumental in protecting wildlife. Species like the giant panda, Bengal tiger, and African elephant are experiencing population growth, offering hope for biodiversity preservation. Environmentalists emphasize the need for continued support and funding to sustain these efforts. The success of these programs highlights the importance of global collaboration in addressing environmental challenges.",
+    "authored": "Nature Watch",
+    "authorname": "Rachel Green",
+    "newsdate": "2025-03-23",
+    "newscategory": ["Environment", "Wildlife", "Conservation", "Global"],
+    "newsimage": "/news/woman-5275027_640.jpg"
   }
 ]

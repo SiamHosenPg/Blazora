@@ -7,6 +7,7 @@ import { MdOutlineNotificationsNone } from "react-icons/md";
 import { MdOutlineExplore } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa";
 import "./navigation.css";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -18,38 +19,56 @@ const Nav = () => {
         <div className="Pages w-[33%] flex items-center justify-center">
           <ul className="flex items-center justify-center gap-4  py-1 px-4 rounded-md">
             <li>
-              <button className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+              <NavLink
+                to="/home"
+                className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+              >
                 <GrHomeOption className="text-2xl" />
                 <b className="block font-semibold text-sm">Home</b>
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+              <NavLink
+                to="/explore"
+                className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+              >
                 <MdOutlineExplore className="text-2xl" />
                 <b className="block font-semibold text-sm">Explore</b>
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+              <NavLink
+                to="/friends"
+                className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+              >
                 <AiOutlineUsergroupAdd className="text-2xl" />
                 <b className="block font-semibold text-sm">Friends</b>
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+              <NavLink
+                to="/messages"
+                className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+              >
                 <FiMessageCircle className="text-2xl" />
                 <b className="block font-semibold text-sm">Message</b>
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2">
+              <NavLink
+                to="/notifications"
+                className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+              >
                 <MdOutlineNotificationsNone className="text-2xl" />
                 <b className="block font-semibold text-sm">Notification</b>
-              </button>
+              </NavLink>
             </li>
           </ul>
         </div>
-        <div className="ProfileMenu w-[33%] flex items-center justify-end gap-2">
+        <NavLink
+          to="/profile"
+          className="ProfileMenu w-[33%] flex items-center justify-end gap-2"
+        >
           <div className="image">
             <img
               className="w-[37px] h-[37px] rounded-full bg-blue-50"
@@ -59,7 +78,7 @@ const Nav = () => {
           </div>
           <div className="text font-semibold">Siam Hosen</div>
           <FaCaretDown />
-        </div>
+        </NavLink>
       </div>
     </div>
   );

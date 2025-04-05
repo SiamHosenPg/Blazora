@@ -3,6 +3,7 @@ import { Leftnavigationlist } from "./Navlist";
 import { HiCheckBadge } from "react-icons/hi2";
 import { LuSettings } from "react-icons/lu";
 import { TbHelpCircle } from "react-icons/tb";
+import { NavLink } from "react-router-dom";
 
 const Sidenav = () => {
   return (
@@ -43,13 +44,14 @@ const Sidenav = () => {
       <div className=" mt-3 p-3 bg-[#f5f5f5] rounded-lg">
         {Leftnavigationlist.map((list, index) => {
           return (
-            <div
+            <NavLink
+              to={list.links}
               key={index}
               className="flex gap-4 mt-1 mb-1 items-center px-5 py-2 hover:bg-white rounded-lg"
             >
               <img className="w-[24px] " src={list.image} alt="" />
               <div className="text-[15px] font-semibold">{list.name}</div>
-            </div>
+            </NavLink>
           );
         })}
       </div>
