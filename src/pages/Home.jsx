@@ -3,6 +3,7 @@ import Newsfeed from "../components/newsfeed/Newsfeed";
 import Storybox from "../components/storys/Storybox";
 import Sidenav from "../components/navigation/Sidenav";
 import Rightsidenav from "../components/navigation/Rightsidenav";
+import UploadBox from "../components/uploadbox/UploadBox";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         {/* Main Content */}
         <main className="flex-1 ">
           <Storybox />
+          <UploadBox />
           <Newsfeed />
         </main>
 
