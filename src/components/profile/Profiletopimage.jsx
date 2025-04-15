@@ -6,7 +6,7 @@ import { MdWork } from "react-icons/md";
 
 const Profiletopimage = () => {
   return (
-    <div className="bg-white rounded-lg mb-6 overflow-hidden w-full pb-8">
+    <div className="bg-white rounded-lg mb-4 overflow-hidden w-full pb-8">
       <div className="profiletopimage  overflow-hidden ">
         <img
           src="/post/2.jpg"
