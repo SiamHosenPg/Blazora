@@ -2,7 +2,7 @@ import React from "react";
 
 const Storybox = () => {
   return (
-    <div className="flex items-center gap-4 mb-6 bg-white rounded-lg py-3 px-5 overflow-x-auto scrollbar-hide">
+    <div className="flex items-center gap-4 mb-4 bg-white rounded-lg py-4 px-6 overflow-x-scroll scrollbar-hide">
       <div className="flex flex-col items-center  shrink-0">
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img

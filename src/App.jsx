@@ -21,7 +21,7 @@ function App() {
           <NewsProvider>
             <Router>
               <Nav />
-              <div className="Hidden h-[100px]"></div>
+              <div className="Hidden h-[90px]"></div>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/*" element={<Notfoundpage />} />

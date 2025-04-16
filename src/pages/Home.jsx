@@ -8,9 +8,9 @@ import UploadBox from "../components/uploadbox/UploadBox";
 const Home = () => {
   return (
     <div>
-      <div className="flex Pagearea min-h-screen xl:gap-6 2xl:gap-14 bg-gray-100">
+      <div className="flex Pagearea min-h-screen gap-6 xl:gap-6 2xl:gap-6 bg-gray-100">
         {/* Left Sidebar */}
-        <nav className="w-3/12 bg-white  sticky top-[100px]  h-[calc(100vh_-_120px)] rounded-lg">
+        <nav className="w-[27%] bg-white  sticky top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg overflow-y-auto">
           <Sidenav />
         </nav>
 
@@ -22,7 +22,7 @@ const Home = () => {
         </main>
 
         {/* Right Sidebar */}
-        <nav className="w-3/12 bg-white  sticky  top-[100px]  h-[calc(100vh_-_120px)] rounded-lg">
+        <nav className="w-[27%] Scrollbar-Hover bg-white  sticky  top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg ">
           <Rightsidenav />
         </nav>
       </div>

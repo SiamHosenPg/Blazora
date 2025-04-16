@@ -11,10 +11,10 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className=" Navigation w-full bg-white h-[72px] border-df border-b fixed">
+    <div className=" Navigation w-full bg-white h-[72px] border-df border-b fixed z-50">
       <div className="Pagearea h-full flex items-center justify-between ">
         <div className="Logo  w-[33%] text-2xl text-[#444] font-bold">
-          Blazora
+          <img src="/logoblack.png" alt="" className="w-[110px]" />
         </div>
         <div className="Pages w-[33%] flex items-center justify-center">
           <ul className="flex items-center justify-center gap-4  py-1 px-4 rounded-md">
