@@ -7,8 +7,10 @@ import ProfileAbout from "../components/profile/ProfileAbout";
 import ProfileFollower from "../components/profile/ProfileFollower";
 import ProfilePhotoslist from "../components/profile/ProfilePhotoslist";
 import ProfileVideos from "../components/profile/ProfileVideos";
+import { useAuthContext } from "../contextapi/Authentication";
 
 const Profile = () => {
+  const { user } = useAuthContext(); // Accessing login method from context
   const ContainerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
@@ -50,13 +52,13 @@ const Profile = () => {
           className="leftfeed w-7/12 sticky space-y-4"
           style={{ top: `calc(98vh - ${height}px)` }}
         >
-          <Profiletopimage />
+          <Profiletopimage user={user} />
           <ProfileSectionlist setShowItem={setShowItem} />
           {renderComponent()}
         </div>
 
         <div className="rightfeed flex-1">
-          <UploadBox />
+          <UploadBox user={user} />
           <Newsfeed />
         </div>
       </div>

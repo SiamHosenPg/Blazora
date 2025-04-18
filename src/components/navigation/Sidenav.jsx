@@ -5,24 +5,24 @@ import { LuSettings } from "react-icons/lu";
 import { TbHelpCircle } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
 
-const Sidenav = () => {
+const Sidenav = ({ user }) => {
   return (
     <div className="w-full p-4">
       {/* Profile shortcut  */}
       <div className=" px-8 py-6 bg-[#f5f5f5] rounded-lg ">
-        <div className="top flex gap-2 items-center">
+        <div className="top flex gap-3 items-center">
           <div>
             <img
               className="w-[50px] h-[50px] rounded-full "
-              src="/profile/2.jpg"
+              src={user?.profileimage || "/post/5.jpg"}
               alt=""
             />
           </div>
           <div className="texts">
             <b className="flex gap-1.5 items-center text-lg">
-              Siam Hossen <HiCheckBadge className="text-blue-600" />{" "}
+              {user.name} <HiCheckBadge className="text-blue-600" />{" "}
             </b>
-            <span className="text-sm">@siamhosenpg</span>
+            <span className="text-sm block">{user.username}</span>
           </div>
         </div>
         <div className="flex items-center w-full justify-between mt-7">

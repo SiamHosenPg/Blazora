@@ -4,12 +4,12 @@ import { MdLocationPin } from "react-icons/md";
 import { HiDotsVertical } from "react-icons/hi";
 import { MdWork } from "react-icons/md";
 
-const Profiletopimage = () => {
+const Profiletopimage = ({ user }) => {
   return (
     <div className="bg-white rounded-lg mb-4 overflow-hidden w-full pb-8">
       <div className="profiletopimage  overflow-hidden w-full">
         <img
-          src="/post/5.jpg"
+          src={user?.coverphoto || "/post/4.jpg"}
           alt=""
           className="aspect-[7/2] object-cover bg-blue-50 w-full"
         />
@@ -18,7 +18,7 @@ const Profiletopimage = () => {
       <div className="profiletopimagedescrition flex items-center justify-start gap-4 px-10 py-2 mt-[-50px] bg-white rounded-lg">
         <div className="pfimage w-[140px] shrink-0 h-[140px] rounded-full overflow-hidden p-[5px] bg-white ">
           <img
-            src="/post/4.jpg"
+            src={user?.profileimage || "/post/5.jpg"}
             alt=""
             className="w-full object-cover h-full rounded-full border-df border"
           />
@@ -26,10 +26,12 @@ const Profiletopimage = () => {
         <div className=" w-full pfdescription mt-6 flex items-center gap-2 justify-between">
           <div className="">
             <h2 className="text-xl font-bold flex items-center gap-1">
-              Siam Hosen
+              {user?.name || "Unknown User"}
               <div className="status w-2 h-2 mt-1 bg-green-600 rounded-full  border-white border-1"></div>
             </h2>
-            <p className="text-sm text-gray-500">@siamhosenpg</p>
+            <p className="text-sm text-gray-500">
+              {user?.username || "Unknown Username"}
+            </p>
           </div>
           <div className=" flex items-center gap-4">
             <button className=" bg-red-100 rounded-md  px-4 py-2  font-semibold transition duration-200 ease-in-out text-sm text-red-600 flex items-center gap-2">
@@ -58,24 +60,24 @@ const Profiletopimage = () => {
         </div>
         <div className="flex items-center gap-4 ml-auto">
           <div className=" text-gray-500 flex font-semibold text-sm gap-1 items-center">
-            <MdWork className="text-lg" />
-            Telecom Engineer Dhaka
+            {user.work ? (
+              <div className="flex items-center gap-1">
+                <MdWork className="text-lg" />
+                {user.work}
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
           <div className=" text-gray-500 flex font-semibold text-sm gap-1 items-center">
             <MdLocationPin className="text-lg" />
-            Bangladesh
+            {user?.location || "Unknown"}
           </div>
         </div>
       </div>
       <div className="profilebio mt-2 px-12">
-        <h3 className="font-bold mt-6 ">Front-End Web Developer</h3>
-        <p className=" text-sm text-gray-800 mt-2">
-          Siam Hossen is a passionate and skilled front-end web developer known
-          for creating visually stunning and highly responsive websites. With a
-          strong command of HTML, CSS, JavaScript, and modern frameworks like
-          React and Tailwind CSS, Siam transforms design concepts into fully
-          functional and user-friendly interfaces.
-        </p>
+        <h3 className="font-bold mt-6 ">{user?.bio || "Blazora User"}</h3>
+        <p className=" text-sm text-gray-800 mt-2">{user?.abouttext || ""}</p>
       </div>
     </div>
   );

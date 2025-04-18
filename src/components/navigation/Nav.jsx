@@ -8,77 +8,98 @@ import { MdOutlineExplore } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa";
 import "./navigation.css";
 import { NavLink } from "react-router-dom";
+import { useAuthContext } from "../../contextapi/Authentication"; // Importing Authentication context
 
 const Nav = () => {
+  const { user } = useAuthContext(); // Accessing login method from context
   return (
-    <div className=" Navigation w-full bg-white h-[72px] border-df border-b fixed z-50">
-      <div className="Pagearea h-full flex items-center justify-between ">
-        <div className="Logo  w-[33%] text-2xl text-[#444] font-bold">
+    <div className="w-full fixed z-50 bg-white">
+      <div className="Pagearea flex items-center justify-between pt-2 md:hidden bg-white h-[60px]   ">
+        <div className="Logo   w-[20%] text-2xl text-[#444]  font-bold">
           <img src="/logoblack.png" alt="" className="w-[110px]" />
         </div>
-        <div className="Pages w-[33%] flex items-center justify-center">
-          <ul className="flex items-center justify-center gap-4  py-1 px-4 rounded-md">
-            <li>
-              <NavLink
-                to="/home"
-                className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
-              >
-                <GrHomeOption className="text-2xl" />
-                <b className="block font-semibold text-sm">Home</b>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/explore"
-                className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
-              >
-                <MdOutlineExplore className="text-2xl" />
-                <b className="block font-semibold text-sm">Explore</b>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/friends"
-                className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
-              >
-                <AiOutlineUsergroupAdd className="text-2xl" />
-                <b className="block font-semibold text-sm">Friends</b>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/messages"
-                className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
-              >
-                <FiMessageCircle className="text-2xl" />
-                <b className="block font-semibold text-sm">Message</b>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/notifications"
-                className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
-              >
-                <MdOutlineNotificationsNone className="text-2xl" />
-                <b className="block font-semibold text-sm">Notification</b>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-        <NavLink
-          to="/profile"
-          className="ProfileMenu w-[33%] flex items-center justify-end gap-2"
-        >
-          <div className="image">
-            <img
-              className="w-[37px] h-[37px] rounded-full bg-blue-50"
-              src="/public/profile/2.jpg"
-              alt=""
-            />
+      </div>
+      <div className=" Navigation w-full bg-white h-[50px]  md:h-[72px] border-df border-b ">
+        <div className="Pagearea h-full flex items-center  justify-between ">
+          <div className="Logo hidden sm:hidden md:block  w-[20%] text-2xl text-[#444]  font-bold">
+            <img src="/logoblack.png" alt="" className="w-[110px]" />
           </div>
-          <div className="text font-semibold">Siam Hosen</div>
-          <FaCaretDown />
-        </NavLink>
+          <div className="Pages w-[100%] sm:w-full md:w-[60%] flex items-center justify-between md:justify-center ">
+            <ul className="flex w-full items-center justify-between md:justify-center gap-4  py-1 px-4 rounded-md ">
+              <li>
+                <NavLink
+                  to="/home"
+                  className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                >
+                  <GrHomeOption className="text-2xl" />
+                  <b className=" hidden lg:block font-semibold text-sm ">
+                    Home
+                  </b>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/explore"
+                  className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                >
+                  <MdOutlineExplore className="text-2xl" />
+                  <b className="hidden lg:block font-semibold text-sm">
+                    Explore
+                  </b>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/friends"
+                  className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                >
+                  <AiOutlineUsergroupAdd className="text-2xl" />
+                  <b className="hidden lg:block font-semibold text-sm">
+                    Friends
+                  </b>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/messages"
+                  className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                >
+                  <FiMessageCircle className="text-2xl" />
+                  <b className="hidden lg:block font-semibold text-sm">
+                    Message
+                  </b>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/notifications"
+                  className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                >
+                  <MdOutlineNotificationsNone className="text-2xl" />
+                  <b className="hidden lg:block font-semibold text-sm">
+                    Notification
+                  </b>
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <NavLink
+            to="/profile"
+            className="ProfileMenu hidden sm:hidden md:flex w-[20%]  items-center justify-end gap-2"
+          >
+            <div className="image">
+              <img
+                className="w-[34px] h-[34px] rounded-full bg-blue-50"
+                src={user?.profileimage || "/post/5.jpg"}
+                alt=""
+              />
+            </div>
+            <div className="text-sm font-semibold text-gray-600">
+              {user?.name || "Unknown User"}
+            </div>
+            <FaCaretDown />
+          </NavLink>
+        </div>
       </div>
     </div>
   );
