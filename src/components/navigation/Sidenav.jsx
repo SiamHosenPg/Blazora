@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidenav = ({ user }) => {
   return (
-    <div className="w-full p-4">
+    <div className="w-full ">
       {/* Profile shortcut  */}
       <div className=" px-8 py-6 bg-[#f5f5f5] rounded-lg ">
         <div className="top flex gap-3 items-center">

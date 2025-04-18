@@ -7,9 +7,9 @@ const Rightsidenav = () => {
   const { newsData } = NewsContext();
 
   return (
-    <div className="p-4">
+    <div className="">
       {/* Suggested Section  */}
-      <div className="Suggested  p-3 bg-[#f5f5f5] rounded-lg">
+      <div className="Suggested  p-3  bg-[#f5f5f5] rounded-lg">
         <div className="flex items-center p-3 justify-between border-b border-df">
           <b>Suggested</b>
           <button className="text-sm text-[#555]">See all</button>

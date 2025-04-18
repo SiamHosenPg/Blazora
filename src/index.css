@@ -55,12 +55,13 @@ img {
   top: 0;
 }
 .Scrollbar-Hover {
-  overflow-y: scroll;
+  overflow-y: hidden;
   scrollbar-width: thin;
   scrollbar-color: #ddd transparent;
 }
 .Scrollbar-Hover:hover {
-  overflow-y: auto;
+  overflow-y: scroll;
+  padding-right: 6px;
 }
 .Scrollbar-Hover::-webkit-scrollbar {
   width: 8px;

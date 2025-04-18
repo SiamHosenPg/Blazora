@@ -46,10 +46,10 @@ const Profile = () => {
 
   return (
     <div className="Pagearea">
-      <div className="flex gap-6 items-start justify-between overflow-visible">
+      <div className="flex flex-col lg:flex-row gap-6 items-start justify-between overflow-visible">
         <div
           ref={ContainerRef}
-          className="leftfeed w-7/12 sticky space-y-4"
+          className="leftfeed  w-full lg:w-7/12 static lg:sticky space-y-4"
           style={{ top: `calc(98vh - ${height}px)` }}
         >
           <Profiletopimage user={user} />
@@ -57,7 +57,7 @@ const Profile = () => {
           {renderComponent()}
         </div>
 
-        <div className="rightfeed flex-1">
+        <div className="rightfeed flex-1 w-full lg:w-5/12">
           <UploadBox user={user} />
           <Newsfeed />
         </div>
