@@ -6,6 +6,7 @@ import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { MdOutlineExplore } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa";
+import { BsGridFill } from "react-icons/bs";
 import "./navigation.css";
 import { NavLink } from "react-router-dom";
 import { useAuthContext } from "../../contextapi/Authentication"; // Importing Authentication context
@@ -14,10 +15,13 @@ const Nav = () => {
   const { user } = useAuthContext(); // Accessing login method from context
   return (
     <div className="w-full fixed z-50 bg-white">
-      <div className="Pagearea flex items-center justify-between pt-2 md:hidden bg-white h-[60px]   ">
-        <div className="Logo   w-[20%] text-2xl text-[#444]  font-bold">
+      <div className="Pagearea flex px-6  items-center justify-between pt-2 md:hidden bg-white h-[60px]   ">
+        <div className="Logo ml-6   w-[20%] text-2xl text-[#444]  font-bold">
           <img src="/logoblack.png" alt="" className="w-[110px]" />
         </div>
+        <NavLink to="/menu" className="mr-6 flex items-center justify-center ">
+          <BsGridFill className="text-xl" />
+        </NavLink>
       </div>
       <div className=" Navigation w-full bg-white h-[50px]  md:h-[72px] border-df border-b ">
         <div className="Pagearea h-full flex items-center  justify-between ">
