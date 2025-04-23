@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Nav from "./components/navigation/Nav";
 import { PostProvider } from "./contextapi/Postscontext";
 import Home from "./pages/Home";
@@ -30,8 +35,10 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="/*" element={<Notfoundpage />} />
                   <Route path="/home" element={<Home />} />
-                  <Route path="/Login" element={<Loginpage />} />
-                  <Route path="/profile" element={<Profile />} />
+                  {
+                    //<Route path="/Login" element={<Loginpage />} />
+                  }
+                  <Route path="/profile/:uniqueId" element={<Profile />} />
                   <Route path="/settings" element={<Home />} />
                   <Route path="/messages" element={<Message />} />
                   <Route path="/notifications" element={<Notifications />} />

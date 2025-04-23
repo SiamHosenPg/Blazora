@@ -10,6 +10,7 @@ import { LuSendHorizontal } from "react-icons/lu"; // Icon for send button
 import { MdOutlinePublic } from "react-icons/md"; // Icon for public visibility
 import { MdOutlineLocationOn } from "react-icons/md"; // Icon for location
 import "./Newsfeed.css"; // Importing CSS for styling
+import { NavLink } from "react-router-dom";
 
 const Newsfeed = () => {
   const { postData } = useContext(PostContext); // Accessing post data from PostContext
@@ -32,7 +33,13 @@ const Newsfeed = () => {
                   />
                   <div className="text">
                     <div className="flex gap-3  items-center">
-                      <b>Siam Hosesn</b> {/* Hardcoded user name */}
+                      <NavLink
+                        to={`/profile/${item.userid}`}
+                        className="font-semibold"
+                      >
+                        Siam Hosesn
+                      </NavLink>{" "}
+                      {/* Hardcoded user name */}
                       <span className="text-sm flex items-center">
                         <MdOutlineLocationOn />
                         {item.location} {/* Post location */}

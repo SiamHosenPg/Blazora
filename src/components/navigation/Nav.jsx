@@ -88,7 +88,7 @@ const Nav = () => {
             </ul>
           </div>
           <NavLink
-            to="/profile"
+            to={`/profile/${user.userid}`}
             className="ProfileMenu hidden sm:hidden md:flex w-[20%]  items-center justify-end gap-2"
           >
             <div className="image">

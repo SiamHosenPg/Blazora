@@ -4,10 +4,11 @@ import Storybox from "../components/storys/Storybox";
 import Sidenav from "../components/navigation/Sidenav";
 import Rightsidenav from "../components/navigation/Rightsidenav";
 import UploadBox from "../components/uploadbox/UploadBox";
-import { useAuthContext } from "../contextapi/Authentication"; // Importing Authentication context
+import { useAuthContext } from "../contextapi/Authentication";
 
 const Home = () => {
-  const { user } = useAuthContext(); // Accessing login method from context
+  const { user } = useAuthContext();
+
   return (
     <div>
       <div className="flex Pagearea min-h-screen gap-6 xl:gap-6 2xl:gap-6 bg-gray-100">

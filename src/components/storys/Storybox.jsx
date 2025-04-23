@@ -7,7 +7,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src="/profile/3.jpg"
             alt=""
           />
         </div>
@@ -17,7 +17,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>
@@ -27,7 +27,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>
@@ -37,7 +37,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>
@@ -47,7 +47,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>
@@ -57,7 +57,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>
@@ -67,7 +67,7 @@ const Storybox = () => {
         <div className="border-2 border-blue-500 rounded-full w-[60px] h-[60px] p-[3px] ">
           <img
             className=" aspect-square block rounded-full bg-blue-200 w-[50px] h-[50px] object-cover"
-            src="/public/profile/3.jpg"
+            src=" /profile/3.jpg"
             alt=""
           />
         </div>

@@ -2,10 +2,23 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext();
 
+const fatchDemoUsers = async () => {
+  try {
+    const response = await fetch("/user/DemoDatauser.json");
+    const DemoUserDb = await response.json();
+    return DemoUserDb;
+  } catch (error) {
+    console.error("Error fetching users:", error);
+    return [];
+  }
+};
+const DemoUserDb = await fatchDemoUsers();
+// const DemoUserDb = DemoData; // Fallback to local data if fetch fails
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
     const savedUser = localStorage.getItem("user");
-    return savedUser ? JSON.parse(savedUser) : null;
+    return savedUser ? JSON.parse(savedUser) : DemoUserDb;
   });
 
   const [AuthStatus, setAuthStatus] = useState(() => {
@@ -53,7 +66,7 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ user, signup, login, AuthStatus, setAuthStatus }}
+      value={{ user, setUser, signup, login, AuthStatus, setAuthStatus }}
     >
       {children}
     </AuthContext.Provider>

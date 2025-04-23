@@ -10,14 +10,14 @@ const Sidenav = ({ user }) => {
     <div className="w-full ">
       {/* Profile shortcut  */}
       <div className=" px-8 py-6 bg-[#f5f5f5] rounded-lg ">
-        <div className="top flex gap-3 items-center">
-          <div>
+        <div className="top flex gap-3 items-center ">
+          <NavLink to={`/profile/${user?.userid}`}>
             <img
               className="w-[50px] h-[50px] rounded-full "
               src={user?.profileimage || "/post/5.jpg"}
               alt=""
             />
-          </div>
+          </NavLink>
           <div className="texts">
             <b className="flex gap-1.5 items-center text-lg">
               {user.name} <HiCheckBadge className="text-blue-600" />{" "}

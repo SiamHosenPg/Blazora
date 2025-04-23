@@ -1,0 +1,24 @@
+{
+  "userid": "1",
+  "username": "siamhosenpg",
+  "name": "Siam Hosen",
+  "email": "john.doe@example.com",
+  "date_of_birth": "1995-06-15",
+  "profileimage": "/profile/1.jpg",
+  "coverphoto": "/post/9.jpg",
+  "work": "Software Engineer Bangladesh",
+  "gender": "Male",
+  "bio": "Web Developer | Tech Enthusiast",
+  "abouttext": "Siam Hossen is a passionate and skilled front-end web developer known for creating visually stunning and highly responsive websites. With a strong command of HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS, Siam transforms design concepts into fully functional and user-friendly interfaces",
+  "password": "hashed_password_123",
+  "mobilenumber": "+1234567890",
+  "posts": ["101", "102", "103"],
+  "followers": ["2", "3", "4"],
+  "following": ["5", "6", "7"],
+  "saved_posts": ["201", "202", "203"],
+  "notification_preferences": {
+    "likes": true,
+    "comments": true,
+    "follows": false
+  }
+}

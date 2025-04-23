@@ -6,7 +6,7 @@ import { RiLiveFill } from "react-icons/ri";
 
 const UploadBox = ({ user }) => {
   return (
-    <div className="w-full bg-white rounded-lg p-6 flex flex-col items-center justify-center mb-4">
+    <div className="w-full bg-white rounded-lg px-6 py-4 flex flex-col items-center justify-center mb-4">
       <div className="flex items-center justify-between w-full gap-4 mb-4 border-b border-df pb-4">
         <div className="image w-14 h-14 shrink-0 rounded-full overflow-hidden border-1 border-gray-300">
           <img src={user.profileimage} alt="" />
