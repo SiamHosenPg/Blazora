@@ -61,13 +61,16 @@ const Newsfeed = () => {
               <div className="posttext mt-4">{item.text}</div>
 
               {/* Post media (image) */}
-              <div className="media w-full h-auto">
+              <NavLink
+                to={`/post/${item.post_id}`}
+                className="media w-full h-auto"
+              >
                 <img
                   className="rounded-lg mt-2 w-full h-auto max-h-[700px]"
                   src={item.media} // Media URL from post data
                   alt=""
                 />
-              </div>
+              </NavLink>
 
               {/* Engagement section (likes, comments, shares) */}
               {item.engagement.map((count, index) => {

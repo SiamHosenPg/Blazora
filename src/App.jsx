@@ -20,6 +20,7 @@ import News from "./pages/News";
 import { AuthProvider } from "./contextapi/Authentication";
 import Loginpage from "./pages/Loginpage";
 import Mobilemenupage from "./pages/Mobilemenupage";
+import PostPrevew from "./pages/extrapage/PostPrevew";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
                   <Route path="/friends" element={<Friends />} />
                   <Route path="/explore" element={<Explore />} />
                   <Route path="/bookmarks" element={<Home />} />
+                  <Route path="/post/:postid" element={<PostPrevew />} />
                   <Route path="/menu" element={<Mobilemenupage />} />
                   <Route path="/news" element={<News />} />
                 </Routes>
