@@ -12,7 +12,9 @@ const fatchDemoUsers = async () => {
     return [];
   }
 };
+
 const DemoUserDb = await fatchDemoUsers();
+
 // const DemoUserDb = DemoData; // Fallback to local data if fetch fails
 
 export const AuthProvider = ({ children }) => {
