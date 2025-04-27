@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NewsContext } from "../../contextapi/Newscontext";
 import { UserContext } from "../../contextapi/Usercontext";
+import { NavLink } from "react-router-dom";
 
 const Rightsidenav = () => {
   const { userData } = useContext(UserContext);
@@ -18,7 +19,8 @@ const Rightsidenav = () => {
           {userData &&
             userData.map((user, index) => {
               return (
-                <li
+                <NavLink
+                  to={`/profile/${user.userid}`}
                   key={index}
                   className="flex items-center justify-between mb-1 hover:bg-white px-3 py-2 rounded-lg"
                 >
@@ -38,7 +40,7 @@ const Rightsidenav = () => {
                   <button className="text-sm text-blue-800 font-semibold">
                     Folow
                   </button>
-                </li>
+                </NavLink>
               );
             })}
         </ul>
@@ -48,7 +50,9 @@ const Rightsidenav = () => {
       <div className="News px-4 py-4 mt-3 bg-[#f5f5f5] rounded-lg">
         <div className="flex items-center justify-between border-b border-df pb-2">
           <div className="font-bold">News</div>
-          <span className="text-sm">Show more</span>
+          <NavLink to="/news" className="text-sm">
+            Show more
+          </NavLink>
         </div>
         <ul>
           {newsData.map((item, index) => {

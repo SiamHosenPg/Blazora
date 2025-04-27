@@ -9,6 +9,7 @@
     "coverphoto": null,
     "work": "Software Engineer Bangladesh",
     "gender": "Male",
+    "location": "Bangladesh",
     "bio": "Web Developer | Tech Enthusiast",
     "abouttext": "Siam Hossen is a passionate and skilled front-end web developer known for creating visually stunning and highly responsive websites. With a strong command of HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS, Siam transforms design concepts into fully functional and user-friendly interfaces",
 
@@ -34,6 +35,7 @@
     "coverphoto": "https://example.com/covers/jane.jpg",
     "work": "Software Engineer Bangladesh",
     "gender": "Female",
+    "location": "Dhaka, Bangladesh",
     "bio": "Graphic Designer | Artist",
     "password": "hashed_password_456",
     "mobilenumber": "+1987654321",

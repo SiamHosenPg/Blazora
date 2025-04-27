@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <div className="flex Pagearea min-h-screen gap-6 xl:gap-6 2xl:gap-6 bg-gray-100">
         {/* Left Sidebar */}
-        <nav className="w-[27%] hidden md:block bg-white  sticky top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg Scrollbar-Hover p-[16px] ">
+        <nav className=" w-[40%] xl:w-[27%] hidden lg:block bg-white  sticky top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg Scrollbar-Hover p-[16px] ">
           <Sidenav user={user} />
         </nav>
 
@@ -25,7 +25,7 @@ const Home = () => {
         </main>
 
         {/* Right Sidebar */}
-        <nav className="w-[27%]  hidden md:block Scrollbar-Hover bg-white  sticky  top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg p-[16px] ">
+        <nav className="w-[27%]  hidden xl:block Scrollbar-Hover bg-white  sticky  top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg p-[16px] ">
           <Rightsidenav />
         </nav>
       </div>

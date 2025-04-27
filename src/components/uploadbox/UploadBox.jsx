@@ -20,14 +20,23 @@ const UploadBox = ({ user }) => {
         </form>
       </div>
       <div className="flex items-center justify-between w-full gap-4 font-medium ">
-        <button className="w-2/6 flex items-center justify-center gap-2   py-3 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out">
-          <FaImages className="text-xl text-blue-600" /> Upload Image
+        <button className="w-2/6 flex items-center justify-center gap-2   py-3 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out ">
+          <FaImages className="text-xl text-blue-600" />{" "}
+          <span className="overflow-hidden whitespace-nowrap text-ellipsis truncate ">
+            Upload Image
+          </span>
         </button>
         <button className="w-2/6 flex items-center justify-center gap-2   py-3 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out">
-          <FaRegFaceKissWinkHeart className="text-xl text-yellow-600" /> Felling
+          <FaRegFaceKissWinkHeart className="text-xl text-yellow-600" />{" "}
+          <span className="overflow-hidden whitespace-nowrap text-ellipsis truncate">
+            Felling
+          </span>
         </button>
         <button className="w-2/6 flex items-center justify-center gap-2   py-3 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out">
-          <RiLiveFill className="text-xl text-red-600" /> Mamories
+          <RiLiveFill className="text-xl text-red-600" />{" "}
+          <span className="overflow-hidden whitespace-nowrap text-ellipsis truncate">
+            Mamories
+          </span>
         </button>
       </div>
     </div>

@@ -3,6 +3,7 @@ import { MdModeEdit } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import { HiDotsVertical } from "react-icons/hi";
 import { MdWork } from "react-icons/md";
+import { IoIosAddCircle } from "react-icons/io";
 
 const Profiletopimage = ({ user }) => {
   return (
@@ -35,12 +36,16 @@ const Profiletopimage = ({ user }) => {
           </div>
           <div className=" w-full  lg:w-7/12  flex justify-between items-center gap-2">
             <button className="w-5/12 bg-blue-700 rounded-md  px-4 py-2  font-semibold transition duration-200 ease-in-out text-sm text-white flex items-center justify-center gap-2">
-              <MdModeEdit className=" text-xl text-white" />
-              Add Post
+              <IoIosAddCircle className=" text-xl text-white" />
+              <span className="overflow-hidden whitespace-nowrap text-ellipsis truncate ">
+                Add Post
+              </span>
             </button>
             <button className="w-5/12 bg-red-100 rounded-md  px-4 py-2  font-semibold transition duration-200 ease-in-out text-sm text-red-600 flex items-center justify-center gap-2">
               <MdModeEdit className=" text-xl text-red-600" />
-              Edit Profile{" "}
+              <span className="overflow-hidden whitespace-nowrap text-ellipsis truncate">
+                Edit Profile
+              </span>
             </button>
             <button className="w-1/12 flex items-center justify-center bg-gray-100 rounded-md   py-2  font-semibold transition duration-200 ease-in-out text-sm   gap-2">
               <HiDotsVertical className=" text-xl text-gray-900" />
@@ -48,8 +53,8 @@ const Profiletopimage = ({ user }) => {
           </div>
         </div>
       </div>
-      <div className="px-6 lg:px-12 flex flex-col lg:flex-row items-center">
-        <div className="w-full lg:w-fit  flex items-center justify-between lg:justify-start mt-3 lg:mt-0  text-sm gap-4 lg:gap-9 font-semibold">
+      <div className="px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-3  ">
+        <div className="w-full lg:w-[50%]  flex items-center justify-between lg:justify-start mt-3 lg:mt-0  text-sm gap-4 lg:gap-9 font-semibold">
           <div className="text-gray-400">
             <span className="text-gray-900 text-base font-bold">1.2K</span>{" "}
             Followers
@@ -62,20 +67,24 @@ const Profiletopimage = ({ user }) => {
             <span className="text-gray-900 text-base font-bold">265</span> Post
           </div>
         </div>
-        <div className="w-full lg:w-fit  flex items-center justify-start lg:justify-end mt-3 lg:mt-0 gap-4 ml-auto">
-          <div className=" text-gray-500 flex font-semibold text-sm gap-1 items-center">
+        <div className="w-full lg:w-[50%]    flex flex-row lg:flex-col xl:flex-row items-center gap-3 justify-start lg:justify-end ">
+          <div className="w-fit  lg:w-full xl:w-4/6 2xl:w-fit text-gray-500   font-semibold">
             {user.work ? (
-              <div className="flex items-center gap-1">
-                <MdWork className="text-lg" />
-                {user.work}
+              <div className="flex justify-start lg:justify-end w-full items-center gap-1 ">
+                <MdWork className="text-lg shrink-0" />
+                <span className=" block overflow-hidden whitespace-nowrap text-ellipsis truncate text-sm">
+                  {user.work}
+                </span>
               </div>
             ) : (
               <div></div>
             )}
           </div>
-          <div className=" text-gray-500 flex font-semibold text-sm gap-1 items-center">
+          <div className=" w-fit lg:w-full xl:w-2/6 2xl:w-fit text-gray-500 flex font-semibold text-sm gap-1 items-center justify-end">
             <MdLocationPin className="text-lg" />
-            {user?.location || "Unknown"}
+            <span className=" block overflow-hidden whitespace-nowrap text-ellipsis truncate text-sm">
+              {user?.location || "Unknown"}
+            </span>
           </div>
         </div>
       </div>
