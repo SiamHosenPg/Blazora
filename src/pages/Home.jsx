@@ -18,7 +18,7 @@ const Home = () => {
         </nav>
 
         {/* Main Content */}
-        <main className="flex-1 w-full ">
+        <main className="flex-1 w-full lg:w-[44%] ">
           <Storybox />
           <UploadBox user={user} />
           <Newsfeed />

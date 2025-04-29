@@ -1,0 +1,58 @@
+[
+  {
+    "storyid": "1",
+    "postuserid": "1",
+    "file": "/stories/story1.jpg",
+    "date": "2025-04-01",
+    "location": "New York, USA",
+    "description": "A beautiful sunset in New York City."
+  },
+  {
+    "storyid": "2",
+    "postuserid": "2",
+    "file": "/stories/story2.jpg",
+    "date": "2025-04-02",
+    "location": "Paris, France",
+    "description": "Eiffel Tower glowing at night."
+  },
+  {
+    "storyid": "3",
+    "postuserid": "3",
+    "file": "/stories/story3.jpg",
+    "date": "2025-04-03",
+    "location": "Tokyo, Japan",
+    "description": "Cherry blossoms in full bloom."
+  },
+  {
+    "storyid": "4",
+    "postuserid": "4",
+    "file": "/stories/story4.jpg",
+    "date": "2025-04-04",
+    "location": "Sydney, Australia",
+    "description": "Sydney Opera House during sunrise."
+  },
+  {
+    "storyid": "5",
+    "postuserid": "5",
+    "file": "/stories/story5.jpg",
+    "date": "2025-04-05",
+    "location": "London, UK",
+    "description": "Big Ben and the London Eye."
+  },
+  {
+    "storyid": "6",
+    "postuserid": "6",
+    "file": "/stories/story6.jpg",
+    "date": "2025-04-06",
+    "location": "Rome, Italy",
+    "description": "The Colosseum under a clear blue sky."
+  },
+  {
+    "storyid": "7",
+    "postuserid": "7",
+    "file": "/stories/story7.jpg",
+    "date": "2025-04-07",
+    "location": "Cairo, Egypt",
+    "description": "The Great Pyramids of Giza."
+  }
+]
