@@ -22,10 +22,13 @@ const Newsfeed = () => {
         {/* Looping through postData to display each post */}
         {postData &&
           postData.map((item, index) => (
-            <li className="bg-white rounded-lg px-5 py-3 pt-5 mb-5" key={index}>
+            <li
+              className="bg-white rounded-lg px-4 sm:px-6 py-2 sm:py-3 pt-4 sm:pt-5 mb-2 sm:mb-4"
+              key={index}
+            >
               {/* Post header with user info and menu button */}
               <div className="flex items-center justify-between ">
-                <div className="left flex items-center justify-start gap-2">
+                <div className="left shrink-0 flex items-center justify-start gap-2">
                   <img
                     className="w-[45px] h-[45px] border-df border rounded-full"
                     src="/profile/2.jpg" // Placeholder profile image
@@ -35,14 +38,17 @@ const Newsfeed = () => {
                     <div className="flex gap-3  items-center">
                       <NavLink
                         to={`/profile/${item.userid}`}
-                        className="font-semibold"
+                        className="font-semibold block whitespace-nowrap overflow-hidden text-ellipsis"
                       >
                         Siam Hosesn
                       </NavLink>{" "}
                       {/* Hardcoded user name */}
-                      <span className="text-sm flex items-center">
+                      <span className="text-sm flex items-center w-fit">
                         <MdOutlineLocationOn />
-                        {item.location} {/* Post location */}
+                        <span className="max-w-[130px] sm:max-w-fit text-ellipsis whitespace-nowrap overflow-hidden">
+                          {item.location}
+                        </span>{" "}
+                        {/* Post location */}
                       </span>
                     </div>
                     <span className="text-[13px] text-[#777] flex gap-2 items-center">
@@ -77,25 +83,25 @@ const Newsfeed = () => {
                 return (
                   <div
                     key={index}
-                    className="flex items-center justify-between mt-4 pb-4 border-t border-df pt-4 "
+                    className="flex items-center justify-between mt-4 pb-3   "
                   >
                     <div className="left flex items-center justify-start gap-4">
                       {/* Likes */}
                       <div className="flex gap-1 items-center">
                         <AiOutlineFire className="text-2xl mr-1" />
                         {count.like_count} {/* Like count */}
-                        <div className="text-sm">Like</div>
+                        <div className="text-sm text-gray-600">Like</div>
                       </div>
                       {/* Comments */}
                       <div className="flex gap-1 items-center">
                         <FaRegComments className="text-2xl mr-1" />
                         {count.comments_count} {/* Comments count */}
-                        <div className="text-sm">Comments</div>
+                        <div className="text-sm text-gray-600">Comments</div>
                       </div>
                       {/* Shares */}
                       <div className="flex gap-1 items-center">
                         {count.shares_count} {/* Shares count */}
-                        <div className="text-sm">Shear</div>{" "}
+                        <div className="text-sm text-gray-600">Shear</div>{" "}
                         {/* Typo: Should be "Share" */}
                       </div>
                     </div>
@@ -108,18 +114,18 @@ const Newsfeed = () => {
               })}
 
               {/* Input for adding a comment */}
-              <div className="CommentsInput flex gap-3 mt-3 items-center ">
+              <div className="CommentsInput flex gap-3 mt-2 sm:mt-3 items-center  ">
                 <img
-                  className="w-[40px] h-[40px] rounded-full"
+                  className="w-10 sm:w-12 h-10 sm:h-12 shrink-0 rounded-full"
                   src="/profile/2.jpg" // Placeholder profile image
                   alt=""
                 />
                 <input
                   type="text"
-                  className=" bg-[#f5f5f5] rounded-full px-5 py-3 text-sm w-[300px]"
+                  className=" bg-[#f5f5f5] rounded-full px-5 py-2 sm:py-3 text-sm w-full outline-none"
                   placeholder="What's your mind?" // Placeholder text
                 />
-                <button>
+                <button className="bg-gray-100 shrink-0  rounded-full w-9 h-9  flex items-center justify-center">
                   <LuSendHorizontal className="text-lg text-[#555]" />{" "}
                   {/* Send button */}
                 </button>
@@ -141,23 +147,23 @@ const Newsfeed = () => {
                           <div className="image">
                             <img
                               src="profile/2.jpg" // Placeholder profile image
-                              className="w-[40px] h-[40px] bg-blue-50 rounded-full"
+                              className="w-10 h-10 bg-blue-50 rounded-full"
                               alt=""
                             />
                           </div>
                           {/* Comment text */}
-                          <div className="texts max-w-[370px] bg-[#f3f3f3] px-5 py-3 rounded-xl rounded-tl-none">
+                          <div className="texts max-w-[370px] bg-[#f3f3f3] px-4 py-2 rounded-xl rounded-tl-none">
                             <b className="block font-medium text-sm">
                               Siam Hosen {/* Hardcoded commenter name */}
                             </b>
                             <div className="flex items-start gap-2">
-                              <span className="block rounded-xl text-sm mt-1">
+                              <span className="block rounded-xl text-sm text-gray-600 mt-1">
                                 {comm.comment_text} {/* Comment text */}
                               </span>
                             </div>
                           </div>
                           {/* Like and reply buttons for comments */}
-                          <div className="flex items-center mt-3 gap-3">
+                          <div className="flex items-center mt-2 gap-3">
                             <button className=" flex ">
                               <AiOutlineFire className="text-lg" />{" "}
                               {/* Like button */}
