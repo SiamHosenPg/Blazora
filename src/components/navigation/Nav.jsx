@@ -1,6 +1,10 @@
 import React from "react";
 
-import { RiHome4Line } from "react-icons/ri";
+import { GoHomeFill } from "react-icons/go";
+import { MdExplore } from "react-icons/md";
+import { BiSolidMessageRounded } from "react-icons/bi";
+import { FaUserGroup } from "react-icons/fa6";
+import { IoNotifications } from "react-icons/io5";
 import { FiMessageCircle } from "react-icons/fi";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { MdOutlineNotificationsNone } from "react-icons/md";
@@ -35,7 +39,7 @@ const Nav = () => {
                   to="/home"
                   className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <RiHome4Line className="text-2xl" />
+                  <GoHomeFill className="text-2xl sm:text-xl" />
                   <b className=" hidden lg:block font-semibold text-sm ">
                     Home
                   </b>
@@ -46,7 +50,7 @@ const Nav = () => {
                   to="/explore"
                   className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <MdOutlineExplore className="text-2xl" />
+                  <MdExplore className="text-2xl sm:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
                     Explore
                   </b>
@@ -57,7 +61,7 @@ const Nav = () => {
                   to="/friends"
                   className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <AiOutlineUsergroupAdd className="text-2xl" />
+                  <FaUserGroup className="text-2xl sm:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
                     Friends
                   </b>
@@ -68,7 +72,7 @@ const Nav = () => {
                   to="/messages"
                   className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <FiMessageCircle className="text-2xl" />
+                  <BiSolidMessageRounded className="text-2xl sm:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
                     Message
                   </b>
@@ -79,7 +83,7 @@ const Nav = () => {
                   to="/notifications"
                   className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <MdOutlineNotificationsNone className="text-2xl" />
+                  <IoNotifications className="text-2xl sm:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
                     Notification
                   </b>
