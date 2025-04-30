@@ -28,15 +28,15 @@ const Sidenav = ({ user }) => {
         <div className="flex items-center w-full justify-between mt-7">
           <div className="text-center">
             <b className="block font-bold">49k</b>
-            <span className="text-sm">Folower</span>
+            <span className="text-sm text-gray-600">Folower</span>
           </div>
           <div className="text-center">
             <b className="block font-bold">438</b>
-            <span className="text-sm">Flowing</span>
+            <span className="text-sm  text-gray-600">Flowing</span>
           </div>
           <div className="text-center">
             <b className="block font-bold">49</b>
-            <span className="text-sm">Post</span>
+            <span className="text-sm  text-gray-600">Post</span>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ const Sidenav = ({ user }) => {
           />
           <div className="text-sm font-semibold w-[calc(100%_-_50px)]">
             Nazirana Nahar{" "}
-            <span className="text-sm text-[#666] font-medium ml-1">
+            <span className="text-sm  text-gray-600 font-medium ml-1">
               Start flowing you
               <span className="block text-[12px]">10:01PM</span>
             </span>
@@ -85,7 +85,7 @@ const Sidenav = ({ user }) => {
           />
           <div className="text-sm font-semibold w-[calc(100%_-_50px)]">
             Masud Sowadogor{" "}
-            <span className="text-sm text-[#666] font-medium ml-1">
+            <span className="text-sm  text-gray-600 font-medium ml-1">
               Comments on your photo "Beautiful this moments!"
               <span className="block text-[12px]">10:34PM</span>
             </span>
@@ -100,7 +100,7 @@ const Sidenav = ({ user }) => {
           />
           <div className="text-sm font-semibold w-[calc(100%_-_50px)]">
             Nazirana Nahar{" "}
-            <span className="text-sm text-[#666] font-medium ml-1">
+            <span className="text-sm  text-gray-600 font-medium ml-1">
               Post a photo "Amaging wather"
               <span className="block text-[12px]">11:34PM</span>
             </span>

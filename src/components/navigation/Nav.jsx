@@ -1,6 +1,6 @@
 import React from "react";
 
-import { GrHomeOption } from "react-icons/gr";
+import { RiHome4Line } from "react-icons/ri";
 import { FiMessageCircle } from "react-icons/fi";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { MdOutlineNotificationsNone } from "react-icons/md";
@@ -35,7 +35,7 @@ const Nav = () => {
                   to="/home"
                   className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <GrHomeOption className="text-2xl" />
+                  <RiHome4Line className="text-2xl" />
                   <b className=" hidden lg:block font-semibold text-sm ">
                     Home
                   </b>
