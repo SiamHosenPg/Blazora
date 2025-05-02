@@ -29,7 +29,7 @@ const Newsfeed = () => {
         {postData &&
           postData.map((item, index) => (
             <li
-              className="bg-white rounded-lg   py-2 sm:py-3 pt-4 sm:pt-5 mb-2 sm:mb-4"
+              className="bg-white rounded-none sm:rounded-lg   py-2 sm:py-3 pt-4 sm:pt-5 mb-2 sm:mb-4"
               key={index}
             >
               {/* Post header with user info and menu button */}
