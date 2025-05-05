@@ -95,7 +95,7 @@ const Newsfeed = () => {
                   >
                     <div className="left flex items-center justify-start gap-4">
                       {/* Likes */}
-                      <div className="flex gap-1 items-center">
+                      <div className="flex gap-1 items-center cursor-pointer">
                         <AiOutlineFire className="text-xl sm:text-2xl " />
                         <span className="font-semibold">
                           {count.like_count}
@@ -106,7 +106,7 @@ const Newsfeed = () => {
                       {/* Comments */}
                       <div
                         onClick={() => HandelComments(item.post_id)}
-                        className="flex gap-1 items-center"
+                        className="flex gap-1 items-center cursor-pointer"
                       >
                         <span className="font-semibold">
                           {count.comments_count}
@@ -115,7 +115,7 @@ const Newsfeed = () => {
                         <div className="text-sm text-gray-600">Comments</div>
                       </div>
                       {/* Shares */}
-                      <div className="flex gap-1 items-center">
+                      <div className="flex gap-1 items-center cursor-pointer">
                         <span className="font-semibold">
                           {count.shares_count}
                         </span>{" "}

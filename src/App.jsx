@@ -15,13 +15,14 @@ import Profile from "./pages/Profile";
 import Message from "./pages/Message";
 import Explore from "./pages/Explore";
 import Notifications from "./pages/Notifications";
-import Friends from "./pages/Friends";
+
 import News from "./pages/News";
 import { AuthProvider } from "./contextapi/Authentication";
 import Loginpage from "./pages/Loginpage";
 import Mobilemenupage from "./pages/Mobilemenupage";
 import PostPrevew from "./pages/extrapage/PostPrevew";
 import { StoryDataProvider } from "./contextapi/Storydatacontext";
+import Discover from "./pages/Discover";
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
                     <Route path="/settings" element={<Home />} />
                     <Route path="/messages" element={<Message />} />
                     <Route path="/notifications" element={<Notifications />} />
-                    <Route path="/friends" element={<Friends />} />
+                    <Route path="/discover" element={<Discover />} />
                     <Route path="/explore" element={<Explore />} />
                     <Route path="/bookmarks" element={<Home />} />
                     <Route path="/post/:postid" element={<PostPrevew />} />

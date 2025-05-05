@@ -28,9 +28,9 @@ const MessageTextpart = () => {
         {/* Message Area  */}
         <div className="  flex flex-col items-end mb-10 ">
           <div className="Id flex items-center flex-row-reverse gap-2">
-            <div className="image w-7">
+            <div className="image w-6 h-6 rounded-full">
               <img
-                className="w-7 h-7 rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden"
                 src="/post/7.jpg"
                 alt=""
               />
@@ -46,9 +46,9 @@ const MessageTextpart = () => {
         {/* end message  */}
         <div className="  flex flex-col items-start mb-10 ">
           <div className="Id flex items-center flex-row gap-2">
-            <div className="image w-7">
+            <div className="image w-6 h-6 rounded-full">
               <img
-                className="w-7 h-7 rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden"
                 src="/post/7.jpg"
                 alt=""
               />
@@ -63,9 +63,9 @@ const MessageTextpart = () => {
         </div>
         <div className="  flex flex-col items-end  mb-10">
           <div className="Id flex items-center flex-row-reverse gap-2">
-            <div className="image w-7">
+            <div className="image w-6 h-6 rounded-full">
               <img
-                className="w-7 h-7 rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden"
                 src="/post/7.jpg"
                 alt=""
               />
@@ -85,9 +85,9 @@ const MessageTextpart = () => {
         {/* end message  */}
         <div className="  flex flex-col items-start mb-10 ">
           <div className="Id flex items-center flex-row gap-2">
-            <div className="image w-7">
+            <div className="image w-6 h-6 rounded-full">
               <img
-                className="w-7 h-7 rounded-full overflow-hidden"
+                className="w-full h-full object-cover rounded-full overflow-hidden"
                 src="/post/7.jpg"
                 alt=""
               />

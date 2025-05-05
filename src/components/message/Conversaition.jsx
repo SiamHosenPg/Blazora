@@ -6,7 +6,22 @@ import MessageTextpart from "./Messagetext/MessageTextpart";
 const Conversaition = () => {
   return (
     <div className=" flex h-full flex-col overflow-hidden  justify-between">
-      <div className="h-full overflow-hidden hover:overflow-y-auto w-full  py-8">
+      <div className="p-4 border-b border-df ">
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              className="w-full h-full object-cover rounded-full"
+              src="/post/3.jpg"
+              alt=""
+            />
+          </div>
+          <div className="">
+            <div className="text-sm font-semibold">Siam Hosen</div>
+            <div className="text-[11px] text-gray-500">Active 2h ago</div>
+          </div>
+        </div>
+      </div>
+      <div className="h-full overflow-hidden hover:overflow-y-auto w-full  Scrollbar-Hover py-8 ">
         <MessageTextpart />
       </div>
       <div className="h-20 py-3">

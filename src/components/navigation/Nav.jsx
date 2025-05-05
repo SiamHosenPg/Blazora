@@ -4,6 +4,7 @@ import { GoHomeFill } from "react-icons/go";
 import { MdExplore } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import { FaUserGroup } from "react-icons/fa6";
+import { RiCompassDiscoverFill } from "react-icons/ri";
 import { IoNotifications } from "react-icons/io5";
 import { FiMessageCircle } from "react-icons/fi";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
@@ -58,12 +59,12 @@ const Nav = () => {
               </li>
               <li>
                 <NavLink
-                  to="/friends"
+                  to="/discover"
                   className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
-                  <FaUserGroup className="text-2xl sm:text-xl" />
+                  <RiCompassDiscoverFill className="text-2xl sm:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
-                    Friends
+                    Discover
                   </b>
                 </NavLink>
               </li>

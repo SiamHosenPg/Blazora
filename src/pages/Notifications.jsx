@@ -1,40 +1,27 @@
 import React, { useState } from "react";
-const data = [
-  { id: 1, title: "Item One", details: "This is the detail for item one." },
-  { id: 2, title: "Item Two", details: "This is the detail for item two." },
-  { id: 3, title: "Item Three", details: "This is the detail for item three." },
-];
 
 const Notifications = () => {
-  const [openItems, setOpenItems] = useState({});
-
-  const handleToggle = (id) => {
-    setOpenItems((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
-
   return (
-    <div>
-      <div className="space-y-4">
-        {data.map((item) => (
-          <div key={item.id} className="border p-4 rounded shadow">
-            <div className="flex justify-between items-center">
-              <h2 className="text-lg font-bold">{item.title}</h2>
-              <button
-                onClick={() => handleToggle(item.id)}
-                className="px-3 py-1 bg-blue-500 text-white rounded"
-              >
-                aaa
-              </button>
+    <div className="Pagearea">
+      <div>
+        <div className="Pagearea w-full "></div>
+        <div className="w-full  px-4  ">
+          <div className="Profile flex items-center gap-2 bg-white rounded-lg p-4">
+            <div className="w-12 h-12 rounded-full border-df border flex items-center justify-center">
+              <img
+                src="/post/2.jpg"
+                alt=""
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
-
-            {openItems[item.id] && (
-              <p className="mt-2 text-gray-700">{item.details}</p>
-            )}
+            <div>
+              <div className="font-semibold">Siam Hossen</div>
+              <span className="block text-sm text-gray-700">
+                Front End Developer
+              </span>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
