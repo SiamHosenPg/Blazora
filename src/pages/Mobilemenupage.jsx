@@ -2,6 +2,8 @@ import React from "react";
 import { MenuNavigationlist } from "../components/navigation/Navlist";
 import { LuSettings } from "react-icons/lu";
 
+import { MdOutlineDarkMode } from "react-icons/md";
+
 const Mobilemenupage = () => {
   return (
     <div className="">
@@ -20,6 +22,17 @@ const Mobilemenupage = () => {
               <span className="block text-sm text-gray-700">
                 Front End Developer
               </span>
+            </div>
+          </div>
+        </div>
+        <div className="px-4">
+          <div className="w-full flex items-center justify-between px-4 py-3 bg-white rounded-lg mt-4">
+            <div className="flex items-center gap-2">
+              <MdOutlineDarkMode className="text-xl w-8 text-center block shrink-0" />
+              <span className="block text-sm  font-semibold">Dark Mode </span>
+            </div>
+            <div className="rounded-full w-16 h-8 bg-gray-200 p-1">
+              <div className="w-8 h-full bg-white rounded-full"></div>
             </div>
           </div>
         </div>

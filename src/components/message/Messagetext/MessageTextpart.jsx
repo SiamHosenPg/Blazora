@@ -38,7 +38,7 @@ const MessageTextpart = () => {
             <div className="text-sm font-semibold">Siam Hosen</div>
             <span className="text-[12px] text-[#888]">7 july 2012</span>
           </div>
-          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-4/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Hey Tamim, I heard you're learning programming? Which language did
             you start with?
           </p>
@@ -56,7 +56,7 @@ const MessageTextpart = () => {
             <div className="text-sm font-medium">Siam Hosen</div>
             <span className="text-[12px] text-[#888]">7 july 2012</span>
           </div>
-          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-4/6 rounded-lg rounded-tl-none mt-2">
+          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
             Wa Alaikum Assalam! Yeah bro, I started with JavaScript. It’s widely
             used in web development, so I thought it was a good choice.
           </p>
@@ -73,11 +73,11 @@ const MessageTextpart = () => {
             <div className="text-sm font-medium">Siam Hosen</div>
             <span className="text-[12px] text-[#888]">7 july 2012</span>
           </div>
-          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-4/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Nice! JavaScript is really powerful. Are you focusing on frontend or
             backend?
           </p>
-          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-4/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-[#2b60d1] text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Always welcome! Keep coding!
           </p>
         </div>
@@ -95,7 +95,7 @@ const MessageTextpart = () => {
             <div className="text-sm font-medium">Siam Hosen</div>
             <span className="text-[12px] text-[#888]">7 july 2012</span>
           </div>
-          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-4/6 rounded-lg rounded-tl-none mt-2">
+          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
             Right now, I’m learning frontend. I’m working with React.js. But in
             the future, I want to learn the full MERN stack.
           </p>

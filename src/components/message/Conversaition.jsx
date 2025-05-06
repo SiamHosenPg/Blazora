@@ -21,7 +21,7 @@ const Conversaition = () => {
           </div>
         </div>
       </div>
-      <div className="h-full overflow-hidden hover:overflow-y-auto w-full  Scrollbar-Hover py-8 ">
+      <div className="h-full overflow-y-auto w-full   py-8 ">
         <MessageTextpart />
       </div>
       <div className="h-20 py-3">

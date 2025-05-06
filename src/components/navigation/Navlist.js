@@ -7,7 +7,7 @@ import newsimage from "../../../public//icons/news.png";
 import { PiNewspaperClippingBold } from "react-icons/pi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { FaRegBookmark } from "react-icons/fa6";
-import { MdOutlineDarkMode } from "react-icons/md";
+
 import { MdHelpOutline } from "react-icons/md";
 import { LuSettings } from "react-icons/lu";
 import { TbLogout } from "react-icons/tb";
@@ -56,11 +56,7 @@ export const MenuNavigationlist = [
     links: "/group",
     icon: HiOutlineUserGroup,
   },
-  {
-    name: "Dark Mode",
-    links: "/darkmode",
-    icon: MdOutlineDarkMode,
-  },
+
   {
     name: "Help & Support",
     links: "/help",

@@ -1,0 +1,48 @@
+[
+  {
+    "notificationid": 20,
+    "title": "Siam Hosen",
+    "description": "Change profile picture and cover photo.",
+    "image": "post/1.jpg",
+    "linkputh": "/home",
+    "timestamp": "10:00AM",
+    "isRead": false
+  },
+  {
+    "notificationid": 0,
+    "title": "Friend Request",
+    "description": "You have a new friend request from Sarah.",
+    "image": "post/6.jpg",
+    "linkputh": "/home",
+    "timestamp": "04:30PM",
+    "isRead": false
+  },
+  {
+    "notificationid": 1,
+    "title": "Message",
+    "description": "You have received a new message from John.",
+    "image": "post/7.jpg",
+    "linkputh": "/home",
+    "timestamp": "2023-10-01",
+    "isRead": false
+  },
+
+  {
+    "notificationid": 2,
+    "title": "Comment",
+    "description": "Alice commented on your post.",
+    "image": "post/8.jpg",
+    "linkputh": "/home",
+    "timestamp": "2023-10-02",
+    "isRead": false
+  },
+  {
+    "notificationid": 3,
+    "title": "hot",
+    "description": "Bob hot your photo.",
+    "image": "post/9.jpg",
+    "linkputh": "/home",
+    "timestamp": "2023-10-03",
+    "isRead": false
+  }
+]
