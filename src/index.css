@@ -17,6 +17,10 @@ img {
   object-fit: cover;
 }
 
+input {
+  outline: none;
+}
+
 .Pagearea {
   width: 1500px;
   margin: auto;
