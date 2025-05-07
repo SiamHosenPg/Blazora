@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "Beautiful Sunset",
+    "description": "Enjoy the mesmerizing sunset at Cox's Bazar.",
+    "videoUrl": "/shorts/video1.mp4",
+    "likes": 1200,
+    "comments": 300
+  },
+  {
+    "id": "2",
+    "title": "Street Food in Dhaka",
+    "description": "Exploring the best street food in Dhaka city.",
+    "videoUrl": "/shorts/video2.mp4",
+    "likes": 950,
+    "comments": 150
+  },
+  {
+    "id": "3",
+    "title": "Rainy Day Vibes",
+    "description": "Feel the calmness of a rainy day in Sylhet.",
+    "videoUrl": "/shorts/video3.mp4",
+    "likes": 800,
+    "comments": 100
+  },
+  {
+    "id": "4",
+    "title": "Adventure in Sundarbans",
+    "description": "A thrilling boat ride in the Sundarbans mangrove forest.",
+    "videoUrl": "/shorts/video4.mp4",
+    "likes": 1400,
+    "comments": 400
+  }
+]

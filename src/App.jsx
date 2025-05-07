@@ -23,6 +23,7 @@ import Mobilemenupage from "./pages/Mobilemenupage";
 import PostPrevew from "./pages/extrapage/PostPrevew";
 import { StoryDataProvider } from "./contextapi/Storydatacontext";
 import Discover from "./pages/Discover";
+import Shorts from "./pages/Shorts";
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
                     <Route path="/settings" element={<Home />} />
                     <Route path="/messages" element={<Message />} />
                     <Route path="/notifications" element={<Notifications />} />
-                    <Route path="/discover" element={<Discover />} />
+                    <Route path="/shorts" element={<Shorts />} />
                     <Route path="/explore" element={<Explore />} />
                     <Route path="/bookmarks" element={<Home />} />
                     <Route path="/post/:postid" element={<PostPrevew />} />

@@ -3,7 +3,7 @@ import Newsfeed from "../newsfeed/Newsfeed";
 
 const Discoverpostbox = () => {
   return (
-    <div className=" columns-2 block items-start">
+    <div className=" columns-1 block items-start">
       <Newsfeed />
     </div>
   );
