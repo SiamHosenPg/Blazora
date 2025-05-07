@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Beautiful Sunset",
     "description": "Enjoy the mesmerizing sunset at Cox's Bazar.",
-    "videoUrl": "/shorts/video1.mp4",
+    "videoUrl": "/shorts/1.mp4",
     "likes": 1200,
     "comments": 300
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "title": "Street Food in Dhaka",
     "description": "Exploring the best street food in Dhaka city.",
-    "videoUrl": "/shorts/video2.mp4",
+    "videoUrl": "/shorts/2.mp4",
     "likes": 950,
     "comments": 150
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "title": "Rainy Day Vibes",
     "description": "Feel the calmness of a rainy day in Sylhet.",
-    "videoUrl": "/shorts/video3.mp4",
+    "videoUrl": "/shorts/3.mp4",
     "likes": 800,
     "comments": 100
   },
@@ -27,8 +27,24 @@
     "id": "4",
     "title": "Adventure in Sundarbans",
     "description": "A thrilling boat ride in the Sundarbans mangrove forest.",
-    "videoUrl": "/shorts/video4.mp4",
+    "videoUrl": "/shorts/4.mp4",
     "likes": 1400,
     "comments": 400
+  },
+  {
+    "id": "5",
+    "title": "Cultural Dance Performance",
+    "description": "Experience the vibrant culture of Bangladesh through dance.",
+    "videoUrl": "/shorts/5.mp4",
+    "likes": 1100,
+    "comments": 250
+  },
+  {
+    "id": "6",
+    "title": "Cycling in the Countryside",
+    "description": "A peaceful cycling journey through the rural landscapes.",
+    "videoUrl": "/shorts/6.mp4",
+    "likes": 700,
+    "comments": 80
   }
 ]

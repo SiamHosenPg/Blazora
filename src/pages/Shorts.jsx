@@ -4,7 +4,10 @@ import { HiDotsVertical } from "react-icons/hi";
 import { AiOutlineFire } from "react-icons/ai";
 import { FaRegComments } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
+import { HiDotsHorizontal } from "react-icons/hi";
 import { FaRegBookmark } from "react-icons/fa";
+
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const Shorts = () => {
   const [shortsData, setShortsData] = useState([]);
@@ -35,20 +38,20 @@ const Shorts = () => {
   };
 
   return (
-    <div className="relative h-[calc(100vh_-_110px)]  m-auto overflow-hidden">
+    <div className="relative h-[calc(100vh_-_110px)]  m-auto overflow-hidden ">
       {shortsData.length > 0 && (
         <div className="h-full w-full flex flex-col items-center  justify-center">
           {/* Video Section */}
           <div className="relative h-full w-full flex items-center justify-center">
-            <div className="w-[500px] h-full bg-gray-600 flex items-center justify-center overflow-hidden rounded-md">
+            <div className=" aspect-10/17 w-full sm:w-auto  h-full bg-gray-600 flex items-center justify-center overflow-hidden rounded-none  sm:rounded-md">
               <video
                 src={shortsData[currentIndex].videoUrl}
                 className="h-auto w-full max-w-full object-cover"
                 autoPlay
                 loop
               ></video>
-              <div className="absolute bottom-10 flex items-start justify-start  w-[500px] text-white px-8">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <div className="absolute bottom-10 flex items-start justify-start  gap-3 w-full sm:w-[400px] xl:w-[440px] 2xl:w-[480px]   text-white  px-4 sm:px-6 xl:px-8 pr-12 sm:pr-6 xl:pr-8">
+                <div className="w-10 h-10 shrink-0 shadow-md rounded-full overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
                     src="/post/4.jpg"
@@ -56,10 +59,10 @@ const Shorts = () => {
                   />
                 </div>
                 <div>
-                  <h2 className="text-lg font-bold">
+                  <h2 className="font-bold text-shadow-md">
                     {shortsData[currentIndex].title}
                   </h2>
-                  <p className="text-sm ">
+                  <p className="text-sm  text-shadow-md ">
                     {shortsData[currentIndex].description}
                   </p>
                 </div>
@@ -69,7 +72,7 @@ const Shorts = () => {
             {/* Overlay Content */}
 
             {/* Action Buttons */}
-            <div className="absolute  bottom-10 flex ml-[600px] flex-col gap-4">
+            <div className="absolute  bottom-10 flex  ml-[86%] sm:ml-[600px] text-white sm:text-black flex-col gap-5">
               <button className=" text-xl flex items-center justify-center flex-col">
                 <AiOutlineFire className="text-2xl" />{" "}
                 <span className="text-sm font-semibold">
@@ -92,29 +95,31 @@ const Shorts = () => {
                 <FaRegBookmark className="text-2xl" />{" "}
               </button>
               <button className=" text-xl flex items-center justify-center flex-col">
-                <HiDotsVertical className="text-2xl" />{" "}
+                <HiDotsHorizontal className="text-2xl" />{" "}
               </button>
             </div>
           </div>
 
           {/* Navigation Buttons */}
-          <div className="absolute top-1/2 left-5 transform -translate-y-1/2">
-            <button
-              onClick={() => handleScroll("prev")}
-              className=" text-2xl"
-              disabled={currentIndex === 0}
-            >
-              &#8593;
-            </button>
-          </div>
-          <div className="absolute top-1/2 right-5 transform -translate-y-1/2">
-            <button
-              onClick={() => handleScroll("next")}
-              className=" text-2xl"
-              disabled={currentIndex === shortsData.length - 1}
-            >
-              &#8595;
-            </button>
+          <div className="absolute hidden sm:flex  bottom-6  items-center justify-between w-full px-4 gap-4 flex-col ml-[-600px]">
+            <div className=" ">
+              <button
+                onClick={() => handleScroll("prev")}
+                className=" text-2xl  bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
+                disabled={currentIndex === 0}
+              >
+                <FaAngleUp className="text-2xl" />
+              </button>
+            </div>
+            <div className="">
+              <button
+                onClick={() => handleScroll("next")}
+                className=" text-2xl bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
+                disabled={currentIndex === shortsData.length - 1}
+              >
+                <FaAngleDown className="text-2xl" />
+              </button>
+            </div>
           </div>
         </div>
       )}
