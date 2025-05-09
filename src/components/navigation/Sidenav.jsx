@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidenav = ({ user }) => {
   return (
-    <div className="w-full ">
+    <div className="w-full overflow-y-auto h-full ScorllSystem px-2">
       {/* Profile shortcut  */}
       <div className=" px-8 py-6 bg-[#f5f5f5] rounded-lg ">
         <div className="top flex gap-3 items-center ">
@@ -20,7 +20,7 @@ const Sidenav = ({ user }) => {
           </NavLink>
           <div className="texts">
             <b className="flex gap-1.5 items-center text-lg">
-              {user.name} <HiCheckBadge className="text-blue-600" />{" "}
+              {user.name} <HiCheckBadge className="IndexColor" />{" "}
             </b>
             <span className="text-sm block">{user.username}</span>
           </div>

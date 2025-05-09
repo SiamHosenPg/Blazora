@@ -2,7 +2,7 @@ import React from "react";
 
 const Lftmgstatus = () => {
   return (
-    <div className="mt-4 w-full flex flex-col gap-2 ">
+    <div className="mt-4 w-full flex flex-col gap-2 px-4 ">
       <div className="w-full flex gap-3 items-center justify-start transition-all hover:bg-gray-100 px-2 py-2 rounded-md">
         <div className="w-12 h-12 rounded-full shrink-0">
           <img
@@ -13,7 +13,7 @@ const Lftmgstatus = () => {
         </div>
         <div className=" w-5/6">
           <h3 className="font-semibold text-sm ">
-            Siam Hosen{" "}
+            <span className="text-gray-700">Siam Hosen</span>{" "}
             <span className="text-gray-600 text-[12px] font-normal ml-1">
               03:32 PM
             </span>

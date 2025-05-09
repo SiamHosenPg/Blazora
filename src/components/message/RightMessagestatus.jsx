@@ -14,10 +14,10 @@ import { MdWork } from "react-icons/md";
 
 const RightMessagestatus = () => {
   return (
-    <div>
+    <div className="">
       <div className="border-b pb-4 border-df">
         <div className="block mt-6  overflow-hidden pb-2 text-center w-fit m-auto">
-          <div className=" p-1 border border-df w-24 h-24 rounded-full shadow-md bg-white">
+          <div className=" p-1 border border-df w-24 h-24 rounded-full  bg-white">
             <img
               className=" h-full w-full  object-cover  rounded-full  "
               src="/post/3.jpg"
@@ -31,7 +31,7 @@ const RightMessagestatus = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 mt-4 px-3">
+      <div className="flex flex-col gap-6 mt-6 px-6">
         {/* About Section Title */}
 
         {/* User Details */}

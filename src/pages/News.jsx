@@ -6,8 +6,8 @@ const News = () => {
   const { newsData } = NewsContext(); // Accessing news data from NewsContext
 
   return (
-    <div className="Pagearea">
-      <div>
+    <div className="Pagearea ">
+      <div className="mt-4">
         {/* Page Title */}
         <h1 className="text-3xl font-bold text-[#444] mb-4">News</h1>
         {/* Page Description */}

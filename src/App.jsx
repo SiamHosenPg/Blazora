@@ -35,7 +35,7 @@ function App() {
               <NewsProvider>
                 <Router>
                   <Nav />
-                  <div className="Hidden h-[120px] md:h-[90px]"></div>
+                  <div className="Hidden h-[110px] md:h-[72px] "></div>
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/*" element={<Notfoundpage />} />

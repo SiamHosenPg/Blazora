@@ -9,7 +9,7 @@
   font-optical-sizing: auto;
 }
 body {
-  background-color: #f3f3f3;
+  background-color: #f5f5f5;
   font-size: 16px;
 }
 
@@ -21,9 +21,25 @@ input {
   outline: none;
 }
 
+.active {
+  color: #d73502;
+}
+
+.IndexColor {
+  color: #d73502;
+}
+.IndexBackground {
+  background-color: #ff521e;
+}
 .Pagearea {
   width: 1500px;
   margin: auto;
+}
+
+.ScrollSystem {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #eee transparent;
 }
 
 @media screen and (min-width: 1900px) {
@@ -57,46 +73,4 @@ input {
 .StikeyPosition {
   position: sticky;
   top: 0;
-}
-.Scrollbar-Hover {
-  overflow-y: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #ddd transparent;
-}
-.Scrollbar-Hover:hover {
-  overflow-y: scroll;
-  padding-right: 6px;
-}
-.Scrollbar-Hover::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background: white;
-}
-.Scrollbar-Hover::-webkit-scrollbar-thumb {
-  background-color: red;
-  border-radius: 4px;
-}
-.Scrollbar-Hover::-webkit-scrollbar-track {
-  background: green;
-}
-.Scrollbar-Hover::-webkit-scrollbar-thumb:hover {
-  background-color: #bbb;
-  overflow-y: scroll;
-}
-.Scrollbar-Hover::-webkit-scrollbar-thumb:active {
-  background-color: #aaa;
-}
-.Scrollbar-Hover::-webkit-scrollbar-corner {
-  background: transparent;
-}
-.Scrollbar-Hover::-webkit-scrollbar-button {
-  background: transparent;
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
 }

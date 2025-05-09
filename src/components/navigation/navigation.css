@@ -1,6 +1,3 @@
 .Navigation .Pages .pageLink {
   transition: all 0.3s;
 }
-.Navigation .Pages .Active {
-  color: #0059ff;
-}

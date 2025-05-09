@@ -8,7 +8,7 @@ const Rightsidenav = () => {
   const { newsData } = NewsContext();
 
   return (
-    <div className="">
+    <div className="  overflow-y-auto ScrollSystem w-full h-full px-2  ">
       {/* Suggested Section  */}
       <div className="Suggested  p-3  bg-[#f5f5f5] rounded-lg">
         <div className="flex items-center p-3 justify-between border-b border-df">
@@ -37,7 +37,7 @@ const Rightsidenav = () => {
                       </span>
                     </div>
                   </div>
-                  <button className="text-sm text-blue-800 font-semibold">
+                  <button className="text-sm IndexColor font-semibold">
                     Folow
                   </button>
                 </NavLink>

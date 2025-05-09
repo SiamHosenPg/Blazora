@@ -16,6 +16,7 @@ import { useAuthContext } from "../../contextapi/Authentication"; // Importing A
 
 const Nav = () => {
   const { user } = useAuthContext(); // Accessing login method from context
+
   return (
     <div className="w-full fixed z-50 bg-white">
       <div className="Pagearea flex gap-3 px-6  items-center justify-between pt-2 md:hidden bg-white h-[60px]   ">
@@ -69,7 +70,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/home"
-                  className=" pageLink Active hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink text-[#555]  hover:bg-[#f5f5f5]  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
                   <GoHomeFill className="text-2xl lg:text-xl" />
                   <b className=" hidden lg:block font-semibold text-sm ">

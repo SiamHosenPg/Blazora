@@ -5,15 +5,15 @@ import RightMessagestatus from "../components/message/RightMessagestatus";
 
 const Message = () => {
   return (
-    <div>
-      <div className="flex Pagearea  gap-6 xl:gap-6 2xl:gap-6 bg-gray-100">
-        <div className="Left  w-[40%] xl:w-[27%] hidden lg:block bg-white  sticky top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg Scrollbar-Hover p-[16px] ">
+    <div className="Pagearea">
+      <div className="flex  bg-white mt-2 md:mt-4 rounded-md overflow-hidden">
+        <div className="Left  w-[40%] xl:w-[27%] hidden lg:block border-r border-df bg-white  sticky top-[90px]  h-[calc(100vh_-_110px)]    ">
           <Leftmessagestatus />
         </div>
-        <div className="Center h-[calc(100vh_-_90px)] flex-1 w-full  px-4 lg:w-[44%] bg-white">
+        <div className="Center h-[calc(100vh_-_110px)] flex-1 w-full  lg:w-[44%] border-r border-df">
           <Conversaition />
         </div>
-        <div className="Right w-[27%]  hidden xl:block Scrollbar-Hover bg-white  sticky  top-[90px]  h-[calc(100vh_-_90px)] rounded-t-lg p-[16px] ">
+        <div className="Right w-[27%]  hidden xl:block    sticky  top-[90px]  h-[calc(100vh_-_110px)]   ">
           <RightMessagestatus />
         </div>
       </div>
