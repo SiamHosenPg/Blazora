@@ -37,7 +37,6 @@ input {
 }
 
 .ScrollSystem {
-  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #eee transparent;
 }

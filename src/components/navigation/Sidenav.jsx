@@ -7,13 +7,13 @@ import { NavLink } from "react-router-dom";
 
 const Sidenav = ({ user }) => {
   return (
-    <div className="w-full overflow-y-auto h-full ScorllSystem px-2">
+    <div className="w-full overflow-y-auto h-full ScrollSystem px-2">
       {/* Profile shortcut  */}
       <div className=" px-8 py-6 bg-[#f5f5f5] rounded-lg ">
         <div className="top flex gap-3 items-center ">
-          <NavLink to={`/profile/${user?.userid}`}>
+          <NavLink to={`/profile/${user?.userid}`} className="shrink-0">
             <img
-              className="w-[50px] h-[50px] rounded-full "
+              className="w-[50px] border border-df   h-[50px] rounded-full "
               src={user?.profileimage || "/post/5.jpg"}
               alt=""
             />

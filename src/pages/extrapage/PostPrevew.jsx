@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom";
 import { PostContext } from "../../contextapi/Postscontext";
 
 import { AiOutlineFire } from "react-icons/ai"; // Icon for likes
-import { HiDotsVertical, HiDotsHorizontal } from "react-icons/hi";
+import { HiDotsVertical } from "react-icons/hi";
 
-import { BsReply } from "react-icons/bs";
-import { AiFillFire } from "react-icons/ai"; // Another fire icon (not used here)
-import { FaRegComments } from "react-icons/fa6"; // Icon for comments
+import { FaBackspace } from "react-icons/fa";
+import { VscScreenFull } from "react-icons/vsc";
+
 import ActionBoxContent from "../../components/actionsbox/ActionBoxContent";
+import Commentsfulllist from "../../components/comments/Commentsfulllist";
 
 const PostPrevew = () => {
   const { postid } = useParams();
@@ -25,6 +26,15 @@ const PostPrevew = () => {
     <div className="Pagearea">
       <div className=" mt-0  sm:mt-4  flex flex-col md:flex-row items-start justify-between   gap-6">
         <div className="leftArea w-full md:w-8/12 h-[calc(100vh_-_110px)] relative flex items-center bg-gray-300 rounded-none sm:rounded-lg overflow-hidden justify-center">
+          <div className=" absolute z-30 left-0 top-0 flex items-center justify-center  gap-3 p-3">
+            <button className="w-10 h-10 p-1 flex items-center justify-center bg-[#0000002d]  rounded-full shadow-md transition duration-300 ease-in-out">
+              <FaBackspace className="text-2xl text-white text-shadow-md" />
+            </button>
+
+            <button className="w-10 h-10 p-1 flex items-center justify-center bg-[#0000002d]  rounded-full shadow-md transition duration-300 ease-in-out">
+              <VscScreenFull className="text-2xl text-white text-shadow-md" />
+            </button>
+          </div>
           <img
             className=" max-w-full max-h-full relative z-20  object-contain "
             src={Foundpost.media}
@@ -69,58 +79,22 @@ const PostPrevew = () => {
                   <ActionBoxContent StatusActionBox={StatusActionBox} />
                 </div>
               </div>
-              <p className="text-sm font-medium mt-3 px-2 text-gray-600 ">
+              <p className="text-sm font-medium mt-4 px-2 text-gray-600 ">
                 {Foundpost.text}
               </p>
             </div>
             {/* Comments section */}
-            <div className=" mt-4 h-full flex flex-col  ">
+            <div className=" mt-4 h-full flex flex-col  overflow-hidden">
               <b className="block shrink-0 py-2 border-b border-df ">
                 {" "}
                 Comments
               </b>
-              <div className=" Comments  h-full overflow-y-auto">
+              <div className=" Comments  h-full overflow-y-auto ScrollSystem  ">
                 {/* Looping through comments */}
+
                 {Foundpost.comments &&
                   Foundpost.comments.map((comm, index) => {
-                    return (
-                      <div
-                        className=" commentsitems flex items-start gap-2 mt-3 overflow-auto "
-                        key={index}
-                      >
-                        {/* Commenter profile image */}
-                        <div className="image w-10 h-10 rounded-full shrink-0 bg-gray-100">
-                          <img
-                            src="profile/2.jpg" // Placeholder profile image
-                            className=" bg-blue-50 w-full h-full object-cover rounded-full"
-                            alt=""
-                          />
-                        </div>
-                        {/* Comment text */}
-                        <div className="texts max-w-[370px] text-gray-600 bg-[#f3f3f3] px-2 py-2 rounded-xl rounded-tl-none">
-                          <div className="font-semibold text-sm flex items-center justify-between">
-                            <h4 className="pl-2">Siam Hosen</h4>{" "}
-                            {/* Hardcoded commenter name */}
-                            <HiDotsHorizontal />
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <p className="block text-gray-600 rounded-xl text-sm mt-1 px-2">
-                              {comm.comment_text} {/* Comment text */}
-                            </p>
-                          </div>
-                        </div>
-                        {/* Like and reply buttons for comments */}
-                        <div className="flex items-center mt-3 gap-3">
-                          <button className=" flex text-gray-600 hover:text-gray-800 ">
-                            <AiOutlineFire className="text-lg" />{" "}
-                            {/* Like button */}
-                          </button>
-                          <button className="text-sm text-gray-600 hover:text-gray-800">
-                            <BsReply className="text-lg" /> {/* Reply button */}
-                          </button>
-                        </div>
-                      </div>
-                    );
+                    return <Commentsfulllist comm={comm} key={index} />;
                   })}
               </div>
             </div>

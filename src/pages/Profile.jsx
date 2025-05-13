@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
+import { PostContext } from "../contextapi/Postscontext";
 import Profiletopimage from "../components/profile/Profiletopimage";
 import UploadBox from "../components/uploadbox/UploadBox";
 import Newsfeed from "../components/newsfeed/Newsfeed";
@@ -10,12 +11,15 @@ import ProfileVideos from "../components/profile/ProfileVideos";
 import { useAuthContext } from "../contextapi/Authentication";
 import { useParams } from "react-router-dom";
 import { UserContext } from "../contextapi/Usercontext";
+import Postbox from "../components/post/Postbox";
 
 const Profile = () => {
   const { uniqueId } = useParams(); // Getting the id from the URL parameters
   const { user } = useAuthContext(); //login user
   const { userData } = useContext(UserContext); // Accessing user data from context
   const FoundUser = userData.find((p) => p.userid === uniqueId); // Finding the user from the context
+
+  const { postData } = useContext(PostContext); // Accessing post data from context
 
   // Accessing login method from context
   const ContainerRef = useRef(null);
@@ -66,7 +70,26 @@ const Profile = () => {
 
         <div className="rightfeed flex-1 w-full lg:w-5/12">
           <UploadBox user={user} />
-          <Newsfeed />
+          {FoundUser && FoundUser.post_id.length > 0 ? (
+            <ul className="mt-4">
+              {FoundUser.post_id.map((item, index) => {
+                return (
+                  <div className="" key={index}>
+                    {postData.map((post) => {
+                      if (post.post_id === item) {
+                        return <Postbox item={post} key={index} />;
+                      }
+                      return null;
+                    })}
+                  </div>
+                );
+              })}
+            </ul>
+          ) : (
+            <div className="text-center text-gray-500 mt-4">
+              No posts available.
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
     "abouttext": "Siam Hossen is a passionate and skilled front-end web developer known for creating visually stunning and highly responsive websites. With a strong command of HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS, Siam transforms design concepts into fully functional and user-friendly interfaces",
     "password": "123",
     "mobilenumber": "+8801234567890",
-    "post_id": [101, 102, 103],
+    "post_id": ["101", "102", "103"],
     "followers_list": [2, 3, 4],
     "following_list": [5, 6, 7],
     "saved_posts": [201, 202, 203]
@@ -34,7 +34,7 @@
     "abouttext": "Rakib Ahmed is a talented graphic designer specializing in creating visually appealing designs for both digital and print media. With a keen eye for detail and a passion for creativity, Rakib has worked with numerous clients to bring their ideas to life.",
     "password": "456",
     "mobilenumber": "+8801987654321",
-    "post_id": [104, 105, 106],
+    "post_id": ["104", "105", "106"],
     "followers_list": [1, 3, 5],
     "following_list": [4, 6, 7],
     "saved_posts": [204, 205, 206]
@@ -54,7 +54,7 @@
     "abouttext": "Tahmina Akter is a skilled content writer and blogger who specializes in crafting engaging and informative articles. Her expertise lies in SEO-friendly content creation, helping businesses improve their online presence.",
     "password": "789",
     "mobilenumber": "+8801678901234",
-    "post_id": [107, 108, 109],
+    "post_id": ["107", "108", "109"],
     "followers_list": [2, 4, 6],
     "following_list": [1, 5, 7],
     "saved_posts": [207, 208, 209]
@@ -74,7 +74,7 @@
     "abouttext": "Arif Hasan is a digital marketing expert with a focus on SEO, social media marketing, and paid advertising. He has helped numerous businesses grow their online presence and achieve their marketing goals.",
     "password": "101112",
     "mobilenumber": "+8801556789012",
-    "post_id": [110, 111, 112],
+    "post_id": ["110", "111", "112"],
     "followers_list": [1, 3, 5],
     "following_list": [2, 6, 7],
     "saved_posts": [210, 211, 212]
@@ -94,14 +94,14 @@
     "abouttext": "Nabila Khan is a dedicated student pursuing her studies in environmental science. She is passionate about research and aims to contribute to solving global environmental challenges.",
     "password": "131415",
     "mobilenumber": "+8801230987654",
-    "post_id": [113, 114, 115],
+    "post_id": ["113", "114", "115"],
     "followers_list": [2, 3, 4],
     "following_list": [1, 6, 7],
     "saved_posts": [213, 214, 215]
   },
   {
     "userid": "6",
-    "username": "farhan_rahman",
+    "username": "afarhan_rahmanq",
     "name": "Farhan Rahman",
     "email": "farhan@gmail.com",
     "date_of_birth": "1992-09-10",
@@ -114,9 +114,29 @@
     "abouttext": "Farhan Rahman is a professional photographer known for capturing breathtaking landscapes and portraits. His work has been featured in various exhibitions and publications.",
     "password": "161718",
     "mobilenumber": "+8801987654321",
-    "post_id": [116, 117, 118],
+    "post_id": ["116", "117", "118"],
     "followers_list": [1, 2, 5],
     "following_list": [3, 4, 7],
     "saved_posts": [216, 217, 218]
+  },
+  {
+    "userid": "7",
+    "username": "sadia_rahman",
+    "name": "Sadia Rahman",
+    "email": " sadiya@gmail.com",
+    "date_of_birth": "1996-12-20",
+    "profileimage": "/profile/7.jpg",
+    "coverphoto": "/post/7.jpg",
+    "work": "Fashion Designer at Khulna",
+    "gender": "Female",
+    "location": "Khulna, Bangladesh",
+    "bio": "Fashion Enthusiast | Designer",
+    "abouttext": "Sadia Rahman is a creative fashion designer with a passion for creating unique and stylish clothing. She has a keen eye for trends and enjoys experimenting with different fabrics and styles.",
+    "password": "192021",
+    "mobilenumber": "+8801234567890",
+    "post_id": ["119", "120", "121"],
+    "followers_list": [1, 2, 3],
+    "following_list": [4, 5, 6],
+    "saved_posts": [219, 220, 221]
   }
 ]

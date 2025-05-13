@@ -104,8 +104,11 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/messages"
-                  className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink relative   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
                 >
+                  <div className=" absolute bg-red-700  h-5 min-w-5 max-w-12 border border-white left-0 top-0 ml-4 flex items-center justify-center rounded-full text-white font-semibold text-[10px]">
+                    23
+                  </div>
                   <BiSolidMessageRounded className="text-2xl lg:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
                     Message
@@ -131,7 +134,7 @@ const Nav = () => {
           >
             <div className="image">
               <img
-                className="w-[34px] h-[34px] rounded-full bg-blue-50"
+                className="w-[34px] border border-df h-[34px] rounded-full bg-blue-50"
                 src={user?.profileimage || "/post/5.jpg"}
                 alt=""
               />
