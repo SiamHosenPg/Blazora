@@ -30,7 +30,7 @@ const Profile = () => {
   const renderComponent = () => {
     switch (showItem) {
       case "about":
-        return <ProfileAbout />;
+        return <ProfileAbout user={FoundUser} />;
       case "follower":
         return <ProfileFollower />;
       case "photos":

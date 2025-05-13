@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 
-const ProfileAbout = () => {
+const ProfileAbout = ({ user }) => {
   return (
     <div className="flex flex-col gap-6 px-6 lg:px-12 py-6 bg-white rounded-md w-full">
       {/* About Section Title */}
@@ -23,18 +23,14 @@ const ProfileAbout = () => {
         <div className="flex items-start gap-1">
           <FaGraduationCap className="text-lg w-[30px] shrink-0" />
           <span>
-            Studied at{" "}
-            <span className="font-semibold">
-              Pabna Government Adoward College
-            </span>
+            Studied at <span className="font-semibold">{user.education}</span>
           </span>
         </div>
         {/* Work  */}
         <div className="flex items-start gap-1">
           <MdWork className="text-lg w-[30px] shrink-0" />
           <span>
-            Working at{" "}
-            <span className="font-semibold">Telecom Engineer at Dhaka</span>
+            Working at <span className="font-semibold">{user.work}</span>
           </span>
         </div>
 
@@ -42,7 +38,7 @@ const ProfileAbout = () => {
         <div className="flex items-start gap-1">
           <FaBirthdayCake className="text-lg w-[30px] shrink-0" />
           <span>
-            Born on <span className="font-semibold">January 15, 1995</span>
+            Born on <span className="font-semibold">{user.date_of_birth}</span>
           </span>
         </div>
 
@@ -50,7 +46,7 @@ const ProfileAbout = () => {
         <div className="flex items-start gap-1">
           <FaHeart className="text-lg w-[30px] shrink-0" />
           <span>
-            In a <span className="font-semibold">relationship</span>
+            <span className="font-semibold">{user.relationship}</span>
           </span>
         </div>
 
@@ -58,8 +54,8 @@ const ProfileAbout = () => {
         <div className="flex items-start gap-1">
           <FaHome className="text-lg w-[30px] shrink-0" />
           <span>
-            Lives in New{" "}
-            <span className="font-semibold">Khulna Bangladesh</span>
+            Lives in Now{" "}
+            <span className="font-semibold">{user.fulllocation}</span>
           </span>
         </div>
 

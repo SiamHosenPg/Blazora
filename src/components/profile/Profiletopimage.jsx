@@ -56,15 +56,22 @@ const Profiletopimage = ({ user }) => {
       <div className="px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-3  ">
         <div className="w-full lg:w-[50%]  flex items-center justify-between lg:justify-start mt-3 lg:mt-0  text-sm gap-4 lg:gap-9 font-semibold">
           <div className="text-gray-400">
-            <span className="text-gray-900 text-base font-bold">1.2K</span>{" "}
+            <span className="text-gray-900 text-base font-bold">
+              {user.followers_list.length}
+            </span>{" "}
             Followers
           </div>
           <div className="text-gray-400">
-            <span className="text-gray-900 text-base font-bold">675</span>{" "}
+            <span className="text-gray-900 text-base font-bold">
+              {user.following_list.length}
+            </span>{" "}
             Following
           </div>
           <div className="text-gray-400">
-            <span className="text-gray-900 text-base font-bold">265</span> Post
+            <span className="text-gray-900 text-base font-bold">
+              {user.post_id.length}
+            </span>{" "}
+            Post
           </div>
         </div>
         <div className="w-full lg:w-[50%]    flex flex-row lg:flex-col xl:flex-row items-center gap-3 justify-start lg:justify-end ">
