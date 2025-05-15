@@ -41,6 +41,15 @@ input {
   scrollbar-color: #eee transparent;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @media screen and (min-width: 1900px) {
   .Pagearea {
     width: 1500px;

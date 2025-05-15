@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { PostContext } from "../../contextapi/Postscontext";
 
 import { AiOutlineFire } from "react-icons/ai"; // Icon for likes
@@ -11,7 +11,11 @@ import { VscScreenFull } from "react-icons/vsc";
 import ActionBoxContent from "../../components/actionsbox/ActionBoxContent";
 import Commentsfulllist from "../../components/comments/Commentsfulllist";
 
+import { UserContext } from "../../contextapi/Usercontext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const PostPrevew = () => {
+  const { userData } = useContext(UserContext);
   const { postid } = useParams();
   const { postData } = useContext(PostContext);
   const Foundpost = postData.find((item) => item.post_id === postid);
@@ -22,6 +26,7 @@ const PostPrevew = () => {
       ? setStatusActionBox(true)
       : setStatusActionBox(false);
   };
+
   return (
     <div className="Pagearea">
       <div className=" mt-0  sm:mt-4  flex flex-col md:flex-row items-start justify-between   gap-6">
@@ -35,50 +40,68 @@ const PostPrevew = () => {
               <VscScreenFull className="text-2xl text-white text-shadow-md" />
             </button>
           </div>
-          <img
+          <LazyLoadImage
             className=" max-w-full max-h-full relative z-20  object-contain "
             src={Foundpost.media}
             alt=""
+            effect="blur"
+            wrapperClassName="max-w-full max-h-full z-10"
           />
           <img
             className=" absolute z[-10] max-w-full max-h-full  object-contain blur-xl scale-200 "
             src={Foundpost.media}
-            alt=""
           />
         </div>
         {/* Right side area */}
         <div className=" w-full md:w-4/12 hidden lg:block ">
           <div className=" p-4 h-[calc(100vh_-_110px)] bg-white rounded-lg flex flex-col justify-between">
             <div className=" shrink-0">
-              <div className="Profile flex items-center justify-between bg-gray-100 gap-2 px-3 py-2 rounded-lg">
-                <div className="flex items-center gap-2">
-                  <div className=" w-12 h-12 rounded-full border-df border flex items-center justify-center">
-                    {" "}
-                    <img
-                      src="/post/2.jpg"
-                      alt=""
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-700">
-                      Siam Hossen
+              {userData.map((user, index) => {
+                if (user.userid === Foundpost.userid) {
+                  return (
+                    <div
+                      key={index}
+                      className="Profile flex items-center justify-between bg-gray-100 gap-2 px-3 py-2 rounded-lg"
+                    >
+                      <div className="flex items-center gap-2">
+                        <NavLink
+                          to={`/profile/${user.userid}`}
+                          className=" w-12 h-12 rounded-full border-df border flex items-center justify-center overflow-hidden"
+                        >
+                          {" "}
+                          <LazyLoadImage
+                            src={user.profileimage}
+                            alt=""
+                            className="w-full h-full object-cover rounded-full overflow-hidden"
+                            effect="blur"
+                            wrapperClassName="w-full h-full overflow-hidden"
+                          />
+                        </NavLink>
+                        <div>
+                          <NavLink
+                            to={`/profile/${user.userid}`}
+                            className="font-semibold text-gray-700"
+                          >
+                            {user.name}
+                          </NavLink>
+                          <span className="block text-sm text-gray-600">
+                            {user.bio}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="">
+                        <button className="text-gray-500 hover:text-gray-700">
+                          <HiDotsVertical
+                            onClick={handleActionBox}
+                            className="text-xl"
+                          />
+                        </button>
+                        <ActionBoxContent StatusActionBox={StatusActionBox} />
+                      </div>
                     </div>
-                    <span className="block text-sm text-gray-600">
-                      Front End Developer
-                    </span>
-                  </div>
-                </div>
-                <div className="">
-                  <button className="text-gray-500 hover:text-gray-700">
-                    <HiDotsVertical
-                      onClick={handleActionBox}
-                      className="text-xl"
-                    />
-                  </button>
-                  <ActionBoxContent StatusActionBox={StatusActionBox} />
-                </div>
-              </div>
+                  );
+                }
+              })}
               <p className="text-sm font-medium mt-4 px-2 text-gray-600 ">
                 {Foundpost.text}
               </p>

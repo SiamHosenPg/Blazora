@@ -1,9 +1,3 @@
-import EventImage from "../../../public//icons/event.png";
-import Friends from "../../../public//icons/friends.png";
-import group from "../../../public//icons/group.png";
-import Settingimage from "../../../public//icons/setting.png";
-import newsimage from "../../../public//icons/news.png";
-
 import { PiNewspaperClippingBold } from "react-icons/pi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { FaRegBookmark } from "react-icons/fa6";
@@ -16,27 +10,27 @@ export const Leftnavigationlist = [
   {
     name: "Frients",
     links: "/friends",
-    image: Friends,
+    image: "/icons/friends.png",
   },
   {
     name: "Group",
     links: "/group",
-    image: group,
+    image: "/icons/group.png",
   },
   {
     name: "Events",
     links: "/events",
-    image: EventImage,
+    image: "/icons/event.png",
   },
   {
     name: "Tuday News",
     links: "/news",
-    image: newsimage,
+    image: "/icons/news.png",
   },
   {
     name: "Setting & Privicy",
     links: "/setting",
-    image: Settingimage,
+    image: "/icons/setting.png",
   },
 ];
 

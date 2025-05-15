@@ -22,7 +22,7 @@ const Storybox = () => {
 
   return (
     <div className="">
-      <div className="flex w-[100%] items-center gap-2 mb-2 sm:mb-4 bg-white rounded-lg py-3 sm:py-4 px-6 overflow-x-scroll scrollbar-hide">
+      <div className="flex w-[100%] items-center gap-2 mb-2 sm:mb-4 bg-white rounded-lg py-3 sm:py-4 px-6 overflow-x-scroll no-scrollbar ">
         {stories &&
           stories.map((story, index) => {
             return <StorySmallbox story={story} key={index} />;
