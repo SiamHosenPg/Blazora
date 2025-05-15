@@ -12,7 +12,6 @@ import ActionBoxContent from "../../components/actionsbox/ActionBoxContent";
 import Commentsfulllist from "../../components/comments/Commentsfulllist";
 
 import { UserContext } from "../../contextapi/Usercontext";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PostPrevew = () => {
   const { userData } = useContext(UserContext);
@@ -40,12 +39,10 @@ const PostPrevew = () => {
               <VscScreenFull className="text-2xl text-white text-shadow-md" />
             </button>
           </div>
-          <LazyLoadImage
+          <img
             className=" max-w-full max-h-full relative z-20  object-contain "
             src={Foundpost.media}
             alt=""
-            effect="blur"
-            wrapperClassName="max-w-full max-h-full z-10"
           />
           <img
             className=" absolute z[-10] max-w-full max-h-full  object-contain blur-xl scale-200 "
@@ -69,12 +66,10 @@ const PostPrevew = () => {
                           className=" w-12 h-12 rounded-full border-df border flex items-center justify-center overflow-hidden"
                         >
                           {" "}
-                          <LazyLoadImage
+                          <img
                             src={user.profileimage}
                             alt=""
                             className="w-full h-full object-cover rounded-full overflow-hidden"
-                            effect="blur"
-                            wrapperClassName="w-full h-full overflow-hidden"
                           />
                         </NavLink>
                         <div>

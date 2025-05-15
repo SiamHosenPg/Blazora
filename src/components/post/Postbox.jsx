@@ -8,8 +8,6 @@ import { LuSendHorizontal } from "react-icons/lu"; // Icon for send button
 import { MdOutlinePublic } from "react-icons/md"; // Icon for public visibility
 import { MdOutlineLocationOn } from "react-icons/md"; // Icon for location
 import { NavLink } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Postbox = ({ item }) => {
   // Accessing post data from PostContext
@@ -36,12 +34,10 @@ const Postbox = ({ item }) => {
               >
                 <div className="left   flex items-center justify-start gap-2 overflow-hidden">
                   <div className="w-10 h-10 bg-red-900 sm:w-12 sm:h-12 border-df border shrink-0  rounded-full overflow-hidden ">
-                    <LazyLoadImage
+                    <img
                       className=" block w-full  h-full object-cover   "
                       src={user.profileimage} // Placeholder profile image
                       alt={user.name}
-                      effect="blur"
-                      wrapperClassName="w-full h-full"
                     />
                   </div>
                   <div className="text">
@@ -85,12 +81,9 @@ const Postbox = ({ item }) => {
         to={`/post/${item.post_id}`}
         className="media block w-full px-0 sm:px-6 h-auto overflow-hidden"
       >
-        <LazyLoadImage
+        <img
           className=" rounded-none sm:rounded-lg mt-2 w-full h-auto max-h-[700px]"
-          wrapperClassName="w-full h-full overflow-hidden"
           src={item.media} // Media URL from post data
-          alt=""
-          effect="blur"
         />
       </NavLink>
 
