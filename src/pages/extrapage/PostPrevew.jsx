@@ -15,6 +15,8 @@ import { UserContext } from "../../contextapi/Usercontext";
 
 const PostPrevew = () => {
   const { userData } = useContext(UserContext);
+
+  // user id data
   const { postid } = useParams();
   const { postData } = useContext(PostContext);
   const Foundpost = postData.find((item) => item.post_id === postid);
@@ -43,10 +45,12 @@ const PostPrevew = () => {
             className=" max-w-full max-h-full relative z-20  object-contain "
             src={Foundpost.media}
             alt=""
+            loading="lazy"
           />
           <img
             className=" absolute z[-10] max-w-full max-h-full  object-contain blur-xl scale-200 "
             src={Foundpost.media}
+            loading="lazy"
           />
         </div>
         {/* Right side area */}
@@ -68,6 +72,7 @@ const PostPrevew = () => {
                           {" "}
                           <img
                             src={user.profileimage}
+                            loading="lazy"
                             alt=""
                             className="w-full h-full object-cover rounded-full overflow-hidden"
                           />
@@ -125,6 +130,7 @@ const PostPrevew = () => {
                   {" "}
                   <img
                     src="/post/2.jpg"
+                    loading="lazy"
                     alt=""
                     className="w-full h-full object-cover rounded-full"
                   />

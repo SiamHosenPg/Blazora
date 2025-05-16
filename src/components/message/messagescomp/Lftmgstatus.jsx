@@ -6,6 +6,7 @@ const Lftmgstatus = () => {
       <div className="w-full flex gap-3 items-center justify-start transition-all hover:bg-gray-100 px-2 py-2 rounded-md">
         <div className="w-12 h-12 rounded-full shrink-0">
           <img
+            loading="lazy"
             className="h-full object-cover rounded-full"
             src="/post/4.jpg"
             alt=""
@@ -27,6 +28,7 @@ const Lftmgstatus = () => {
       <div className="w-full flex gap-3 items-center justify-start transition-all hover:bg-gray-100 px-2 py-2 rounded-md">
         <div className="w-12 h-12 rounded-full shrink-0">
           <img
+            loading="lazy"
             className="h-full object-cover rounded-full"
             src="/post/4.jpg"
             alt=""

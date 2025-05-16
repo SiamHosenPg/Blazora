@@ -10,6 +10,7 @@ const Profiletopimage = ({ user }) => {
     <div className="bg-white rounded-none lg:rounded-lg mb-4 overflow-hidden w-full pb-8">
       <div className="profiletopimage  overflow-hidden w-full">
         <img
+          loading="lazy"
           src={user?.coverphoto || "/post/4.jpg"}
           alt=""
           className="aspect-[7/2] object-cover bg-blue-50 w-full"
@@ -19,6 +20,7 @@ const Profiletopimage = ({ user }) => {
       <div className="profiletopimagedescrition flex flex-col lg:flex-row items-start lg:items-center justify-start gap-4 px-6 lg:px-10 py-2 mt-[-50px] bg-white rounded-lg">
         <div className="pfimage w-[110px] lg:w-[140px] shrink-0 h-[110px] lg:h-[140px] rounded-full overflow-hidden p-[5px] bg-white ">
           <img
+            loading="lazy"
             src={user?.profileimage || "/post/5.jpg"}
             alt=""
             className="w-full object-cover h-full rounded-full border-df border"

@@ -23,6 +23,7 @@ const Commentsfulllist = ({ comm }) => {
                   className="image w-10 h-10 rounded-full shrink-0 bg-gray-100"
                 >
                   <img
+                    loading="lazy"
                     src={user.profileimage} // Placeholder profile image
                     className=" bg-blue-50 w-full h-full object-cover rounded-full"
                     alt=""

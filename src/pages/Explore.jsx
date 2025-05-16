@@ -14,7 +14,11 @@ const Explore = () => {
               key={index}
               className="bg-white block mb-[2px] md:mb-2 xl:mb-4 border border-df"
             >
-              <img src={post.media} className=" w-full h-auto " />
+              <img
+                loading="lazy"
+                src={post.media}
+                className=" w-full h-auto "
+              />
             </NavLink>
           );
         })}

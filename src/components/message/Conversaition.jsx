@@ -14,6 +14,7 @@ const Conversaition = () => {
         <div className="flex items-center gap-2 ">
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img
+              loading="lazy"
               className="w-full h-full object-cover rounded-full"
               src="/post/3.jpg"
               alt=""

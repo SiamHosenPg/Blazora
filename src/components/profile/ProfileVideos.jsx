@@ -9,6 +9,7 @@ const ProfileVideos = () => {
         <div className="grid grid-cols-4 gap-2 lg:gap-5 mt-6">
           <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
             <img
+              loading="lazy"
               src="/public/post/4.jpg"
               className=" aspect-square rounded-md"
               alt=""
@@ -20,6 +21,7 @@ const ProfileVideos = () => {
           </div>
           <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
             <img
+              loading="lazy"
               src="/public/post/4.jpg"
               className=" aspect-square rounded-md"
               alt=""
@@ -31,6 +33,7 @@ const ProfileVideos = () => {
           </div>
           <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
             <img
+              loading="lazy"
               src="/public/post/4.jpg"
               className=" aspect-square rounded-md"
               alt=""
@@ -42,6 +45,7 @@ const ProfileVideos = () => {
           </div>
           <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
             <img
+              loading="lazy"
               src="/public/post/4.jpg"
               className=" aspect-square rounded-md"
               alt=""

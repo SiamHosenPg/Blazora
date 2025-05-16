@@ -5,7 +5,12 @@ const Newscard = ({ item }) => {
   return (
     <div className="block bg-white  pb-6   hover:shadow-lg transition-shadow duration-300 border border-df">
       <div className="image  overflow-hidden mb-4 border-b border-df">
-        <img src={item.newsimage} alt="" className=" aspect-video" />
+        <img
+          loading="lazy"
+          src={item.newsimage}
+          alt=""
+          className=" aspect-video"
+        />
       </div>
       <h2 className="text-lg font-medium px-6">{item.newstitle}</h2>
 

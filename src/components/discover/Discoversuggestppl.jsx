@@ -13,6 +13,7 @@ const Discoversuggestppl = () => {
         >
           <div className=" rounded-lg  overflow-hidden relative">
             <img
+              loading="lazy"
               className=" aspect-3/1 object-cover"
               src={user.coverphoto}
               alt=""
@@ -20,6 +21,7 @@ const Discoversuggestppl = () => {
           </div>
           <div className="w-20 h-20 p-1 ml-5 relative z-10 border-white bg-white mt-[-40px] rounded-full overflow-hidden flex items-center justify-center">
             <img
+              loading="lazy"
               src={user.profileimage}
               alt="User"
               className="rounded-full h-full w-full object-cover"

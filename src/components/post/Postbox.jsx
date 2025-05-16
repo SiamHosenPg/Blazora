@@ -35,6 +35,7 @@ const Postbox = ({ item }) => {
                 <div className="left   flex items-center justify-start gap-2 overflow-hidden">
                   <div className="w-10 h-10 bg-red-900 sm:w-12 sm:h-12 border-df border shrink-0  rounded-full overflow-hidden ">
                     <img
+                      loading="lazy"
                       className=" block w-full  h-full object-cover   "
                       src={user.profileimage} // Placeholder profile image
                       alt={user.name}
@@ -82,6 +83,7 @@ const Postbox = ({ item }) => {
         className="media block w-full px-0 sm:px-6 h-auto overflow-hidden"
       >
         <img
+          loading="lazy"
           className=" rounded-none sm:rounded-lg mt-2 w-full h-auto max-h-[700px]"
           src={item.media} // Media URL from post data
         />
@@ -169,6 +171,7 @@ const Postbox = ({ item }) => {
                                 {/* Commenter profile image */}
                                 <div className="image w-8 h-8 shink">
                                   <img
+                                    loading="lazy"
                                     src={user.profileimage} // Placeholder profile image
                                     className=" bg-blue-50 w-full h-full rounded-full"
                                     alt=""

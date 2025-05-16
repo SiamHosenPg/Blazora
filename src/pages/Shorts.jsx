@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { HiDotsVertical } from "react-icons/hi";
 import { AiOutlineFire } from "react-icons/ai";
 import { FaRegComments } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
@@ -45,6 +44,7 @@ const Shorts = () => {
           <div className="relative h-full w-full flex items-center justify-center">
             <div className=" aspect-10/17 w-full sm:w-auto  h-full bg-gray-600 flex items-center justify-center overflow-hidden rounded-none  sm:rounded-md">
               <video
+                preload="none"
                 src={shortsData[currentIndex].videoUrl}
                 className="h-auto w-full max-w-full object-cover"
                 autoPlay
@@ -53,6 +53,7 @@ const Shorts = () => {
               <div className="absolute bottom-10 flex items-start justify-start  gap-3 w-full sm:w-[400px] xl:w-[440px] 2xl:w-[480px]   text-white  px-4 sm:px-6 xl:px-8 pr-12 sm:pr-6 xl:pr-8">
                 <div className="w-10 h-10 shrink-0 shadow-md rounded-full overflow-hidden">
                   <img
+                    loading="lazy"
                     className="w-full h-full object-cover"
                     src="/post/4.jpg"
                     alt=""

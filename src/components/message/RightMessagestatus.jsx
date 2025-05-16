@@ -19,6 +19,7 @@ const RightMessagestatus = () => {
         <div className="block mt-6  overflow-hidden pb-2 text-center w-fit m-auto">
           <div className=" p-1 border border-df w-24 h-24 rounded-full  bg-white">
             <img
+              loading="lazy"
               className=" h-full w-full  object-cover  rounded-full  "
               src="/post/3.jpg"
               alt=""

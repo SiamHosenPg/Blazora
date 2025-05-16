@@ -19,6 +19,7 @@ const StorySmallbox = ({ story }) => {
                 <div className="w-12 sm:w-14 h-12 sm:h-14 bg-gradient-to-r from-[#ff3007] via-[#fc6400] to-[#fac000] rounded-full overflow-hidden p-[3px]">
                   <div className="  p-[3px] bg-white rounded-full  ">
                     <img
+                      loading="lazy"
                       className=" aspect-square block rounded-full bg-blue-200  object-cover"
                       src={user.profileimage}
                       alt=""
