@@ -84,7 +84,7 @@ const Postbox = ({ item }) => {
       >
         <img
           loading="lazy"
-          className=" rounded-none sm:rounded-lg mt-2 w-full h-auto max-h-[700px]"
+          className=" rounded-none sm:rounded-lg mt-2 w-full h-auto min-w-[100px] bg-gray-100 max-h-[700px]"
           src={item.media} // Media URL from post data
         />
       </NavLink>

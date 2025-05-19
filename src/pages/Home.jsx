@@ -21,6 +21,7 @@ const Home = () => {
         <main className="flex-1 w-full lg:w-[44%] mt-2 md:mt-4  ">
           <Storybox />
           <UploadBox user={user} />
+
           <Newsfeed />
         </main>
 

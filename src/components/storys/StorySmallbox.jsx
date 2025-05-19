@@ -20,7 +20,7 @@ const StorySmallbox = ({ story }) => {
                   <div className="  p-[3px] bg-white rounded-full  ">
                     <img
                       loading="lazy"
-                      className=" aspect-square block rounded-full bg-blue-200  object-cover"
+                      className=" aspect-square w-full h-full block rounded-full bg-gray-100  object-cover"
                       src={user.profileimage}
                       alt=""
                     />
