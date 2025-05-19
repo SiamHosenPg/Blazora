@@ -34,13 +34,13 @@ const UploadBox = ({ user }) => {
         <button className="w-2/6 flex items-center justify-center gap-2   py-2 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out">
           <FaRegFaceKissWinkHeart className="text-xl text-yellow-600" />{" "}
           <span className="text-sm sm:text-base overflow-hidden whitespace-nowrap text-ellipsis truncate">
-            Felling
+            Feeling
           </span>
         </button>
         <button className="w-2/6 flex items-center justify-center gap-2   py-2 rounded-lg hover:bg-gray-100 transition duration-200 ease-in-out">
           <RiLiveFill className="text-xl text-red-600" />{" "}
           <span className="text-sm sm:text-base overflow-hidden whitespace-nowrap text-ellipsis truncate">
-            Mamories
+            Memories
           </span>
         </button>
       </div>

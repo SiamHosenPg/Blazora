@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { Navigate, NavLink, useParams } from "react-router-dom";
 import { PostContext } from "../../contextapi/Postscontext";
 
 import { AiOutlineFire } from "react-icons/ai"; // Icon for likes
@@ -12,6 +12,7 @@ import ActionBoxContent from "../../components/actionsbox/ActionBoxContent";
 import Commentsfulllist from "../../components/comments/Commentsfulllist";
 
 import { UserContext } from "../../contextapi/Usercontext";
+import { useNavigate } from "react-router-dom";
 
 const PostPrevew = () => {
   const { userData } = useContext(UserContext);
@@ -28,12 +29,19 @@ const PostPrevew = () => {
       : setStatusActionBox(false);
   };
 
+  const navigate = useNavigate();
+  const handelBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="Pagearea">
       <div className=" mt-0  sm:mt-4  flex flex-col md:flex-row items-start justify-between   gap-6">
         <div className="leftArea w-full md:w-8/12 h-[calc(100vh_-_110px)] relative flex items-center bg-gray-300 rounded-none sm:rounded-lg overflow-hidden justify-center">
           <div className=" absolute z-30 left-0 top-0 flex items-center justify-center  gap-3 p-3">
-            <button className="w-10 h-10 p-1 flex items-center justify-center bg-[#0000002d]  rounded-full shadow-md transition duration-300 ease-in-out">
+            <button
+              onClick={handelBack}
+              className="w-10 h-10 p-1 flex items-center justify-center bg-[#0000002d]  rounded-full shadow-md transition duration-300 ease-in-out"
+            >
               <FaBackspace className="text-2xl text-white text-shadow-md" />
             </button>
 

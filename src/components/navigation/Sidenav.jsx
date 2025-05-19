@@ -1,8 +1,6 @@
 import React from "react";
 import { Leftnavigationlist } from "./Navlist";
 import { HiCheckBadge } from "react-icons/hi2";
-import { LuSettings } from "react-icons/lu";
-import { TbHelpCircle } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
 
 const Sidenav = ({ user }) => {
@@ -27,7 +25,7 @@ const Sidenav = ({ user }) => {
         </div>
         <div className="flex items-center w-full justify-between mt-7">
           <div className="text-center">
-            <b className="block font-bold">49k</b>
+            <p className="block font-bold">45K</p>
             <span className="text-sm text-gray-600">Folower</span>
           </div>
           <div className="text-center">

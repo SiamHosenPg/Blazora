@@ -57,7 +57,7 @@ const Profile = () => {
 
   return (
     <div className="Pagearea">
-      <div className=" mt-2 md:mt-4 flex flex-col lg:flex-row gap-6 items-start justify-between overflow-visible">
+      <div className=" mt-0 sm:mt-4  flex flex-col lg:flex-row gap-6 items-start justify-between overflow-visible">
         <div
           ref={ContainerRef}
           className="leftfeed  w-full lg:w-7/12 static lg:sticky space-y-4"

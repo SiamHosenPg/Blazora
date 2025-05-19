@@ -1,0 +1,44 @@
+[
+  {
+    "userid": "1",
+    "messagedata": "Hey, how are you doing today?",
+    "time": "12:AM",
+    "seenstatus": false
+  },
+  {
+    "userid": "2",
+    "messagedata": "Let's meet at the coffee shop after work.",
+    "time": "5:34PM",
+    "seenstatus": false
+  },
+  {
+    "userid": "3",
+    "messagedata": "Did you finish the assignment?",
+    "time": "23H",
+    "seenstatus": true
+  },
+  {
+    "userid": "4",
+    "messagedata": "Happy Birthday! Wish you all the best.",
+    "time": "32H",
+    "seenstatus": true
+  },
+  {
+    "userid": "5",
+    "messagedata": "Can you send me the project files?",
+    "time": "3D",
+    "seenstatus": true
+  },
+  {
+    "userid": "6",
+    "messagedata": "Congratulations on your new job!",
+    "time": "4D",
+    "seenstatus": true
+  },
+  {
+    "userid": "7",
+    "messagedata": "Let's go for a walk this evening.",
+    "time": "6D",
+    "seenstatus": true
+  }
+]

@@ -37,7 +37,7 @@ const Shorts = () => {
   };
 
   return (
-    <div className="relative h-[calc(100vh_-_110px)]  m-auto mt-2 md:mt-4 overflow-hidden ">
+    <div className="relative h-[calc(100vh_-_110px)]  m-auto mt-0 md:mt-4 overflow-hidden ">
       {shortsData.length > 0 && (
         <div className="h-full w-full flex flex-col items-center  justify-center">
           {/* Video Section */}

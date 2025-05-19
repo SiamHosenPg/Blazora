@@ -8,8 +8,8 @@ import { TbLogout } from "react-icons/tb";
 
 export const Leftnavigationlist = [
   {
-    name: "Frients",
-    links: "/friends",
+    name: "Follower",
+    links: "/follower",
     image: "/icons/friends.png",
   },
   {

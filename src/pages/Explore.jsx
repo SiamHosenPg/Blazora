@@ -6,7 +6,7 @@ const Explore = () => {
   const { postData } = useContext(PostContext); // Assuming postData is an array of posts;
   return (
     <div className="Pagearea">
-      <div className="columns-3 mt-2 md:mt-4 xl:columns-4 gap-[2px] md:gap-2 xl:gap-4 pb-20 ">
+      <div className="columns-3 mt-[2px] md:mt-4 xl:columns-4 gap-[2px] md:gap-2 xl:gap-4 pb-20 ">
         {postData.map((post, index) => {
           return (
             <NavLink
