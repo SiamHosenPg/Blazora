@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Discoversuggestppl from "../components/discover/Discoversuggestppl";
 import Discoverpostbox from "../components/discover/Discoverpostbox";
 

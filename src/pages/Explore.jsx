@@ -17,7 +17,7 @@ const Explore = () => {
               <img
                 loading="lazy"
                 src={post.media}
-                className=" w-full h-auto "
+                className=" w-full h-auto object-cover min-h-[120px] md:min-h-[250px] xl:min-h-[340px]"
               />
             </NavLink>
           );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 
 import { GoHomeFill } from "react-icons/go";
 import { MdExplore } from "react-icons/md";
