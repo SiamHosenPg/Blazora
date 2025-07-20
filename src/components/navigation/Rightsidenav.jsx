@@ -10,10 +10,10 @@ const Rightsidenav = () => {
   return (
     <div className="  overflow-y-auto ScrollSystem w-full h-full px-2  ">
       {/* Suggested Section  */}
-      <div className="Suggested  p-3  bg-[#f5f5f5] rounded-lg">
-        <div className="flex items-center p-3 justify-between border-b border-df">
+      <div className="Suggested  p-3  bg-background-secondary rounded-lg">
+        <div className="flex items-center text-primary p-3 justify-between border-b border-df">
           <b>Suggested</b>
-          <button className="text-sm text-[#555]">See all</button>
+          <button className="text-sm text-secondary">See all</button>
         </div>
         <ul className="mt-3">
           {userData &&
@@ -22,7 +22,7 @@ const Rightsidenav = () => {
                 <NavLink
                   to={`/profile/${user.userid}`}
                   key={index}
-                  className="flex items-center justify-between mb-1 hover:bg-white px-3 py-2 rounded-lg"
+                  className="flex items-center justify-between mb-1 hover:bg-background px-3 py-2 rounded-lg"
                 >
                   <div className="flex items-center gap-2">
                     <img
@@ -31,8 +31,10 @@ const Rightsidenav = () => {
                       alt=""
                     />
                     <div className="text">
-                      <b className="block text-sm font-semibold">{user.name}</b>
-                      <span className="block text-sm text-[#555]">
+                      <b className="block text-sm font-semibold text-primary">
+                        {user.name}
+                      </b>
+                      <span className="block text-sm text-secondary">
                         @{user.username}
                       </span>
                     </div>
@@ -47,10 +49,10 @@ const Rightsidenav = () => {
       </div>
 
       {/* News content  */}
-      <div className="News px-4 py-4 mt-3 bg-[#f5f5f5] rounded-lg">
+      <div className="News px-4 py-4 mt-3 bg-background-secondary rounded-lg">
         <div className="flex items-center justify-between border-b border-df pb-2">
-          <div className="font-bold">News</div>
-          <NavLink to="/news" className="text-sm">
+          <div className="font-bold text-primary">News</div>
+          <NavLink to="/news" className="text-sm text-secondary">
             Show more
           </NavLink>
         </div>
@@ -58,7 +60,7 @@ const Rightsidenav = () => {
           {newsData.map((item, index) => {
             return (
               <li key={index} className="">
-                <div className="block font-medium mt-5 text-sm">
+                <div className="block font-medium text-primary mt-5 text-sm">
                   {item.newstitle}
                 </div>
               </li>

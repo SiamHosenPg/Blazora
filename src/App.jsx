@@ -24,7 +24,7 @@ const Notfoundpage = lazy(() => import("./pages/Notfoundpage"));
 
 function App() {
   return (
-    <>
+    <div className="bg-background-secondary">
       <Suspense fallback={<Loading />}>
         <AuthProvider>
           <UserProvider>
@@ -67,7 +67,7 @@ function App() {
           </UserProvider>
         </AuthProvider>
       </Suspense>
-    </>
+    </div>
   );
 }
 

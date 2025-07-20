@@ -18,8 +18,8 @@ const Nav = () => {
   const { user } = useAuthContext(); // Accessing login method from context
 
   return (
-    <div className="w-full fixed z-50 bg-white">
-      <div className="Pagearea flex gap-3 px-6  items-center justify-between pt-2 md:hidden bg-white h-[60px]   ">
+    <div className="w-full fixed z-50 bg-background">
+      <div className="Pagearea flex gap-3 px-6  items-center justify-between pt-2 md:hidden bg-background h-[60px]   ">
         <div className="Logo ml-6 shrink-0  w-[24px] text-2xl text-[#444]  font-bold">
           <img src="/firelogoupdate.png" alt="" className="w-full" />
         </div>
@@ -45,7 +45,7 @@ const Nav = () => {
       </div>
 
       {/* Navigation for larger screens */}
-      <div className=" Navigation w-full bg-white h-[50px]  md:h-[72px] border-df border-b ">
+      <div className=" Navigation w-full bg-background h-[50px]  md:h-[72px] border-df border-b ">
         <div className="Pagearea h-full flex items-center  justify-between ">
           <div className=" items-center justify-start md:w-[30%] lg:w-[20%] gap-2   hidden sm:hidden md:flex ">
             <div className="Logo w-[24px] hidden sm:hidden md:block   text-2xl text-[#444]  font-bold">
@@ -53,11 +53,11 @@ const Nav = () => {
             </div>
             <form
               action=""
-              className="flex items-center justify-between bg-gray-100 rounded-full"
+              className="flex items-center justify-between bg-background-secondary rounded-full"
             >
               <input
                 type="text"
-                className=" px-3 py-2 text-sm font-semibold w-full"
+                className=" px-3 py-2 text-sm text-loose font-semibold w-full"
                 placeholder="Search your items here..."
               />
               <button className=" px-2 py-2 rounded-full flex items-center justify-center">
@@ -70,7 +70,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/home"
-                  className=" pageLink text-[#555]  hover:bg-[#f5f5f5]  p-2 rounded-md  flex items-center justify-center gap-2"
+                  className=" pageLink text-loose  hover:bg-hovermenu  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
                   <GoHomeFill className="text-2xl lg:text-xl" />
                   <b className=" hidden lg:block font-semibold text-sm ">
@@ -81,7 +81,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/explore"
-                  className=" pageLink   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink text-loose  hover:bg-hovermenu  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
                   <MdExplore className="text-2xl lg:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
@@ -92,7 +92,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/shorts"
-                  className=" pageLink  hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink text-loose  hover:bg-hovermenu  p-2 rounded-md flex items-center justify-center gap-2"
                 >
                   <RiVideoAiFill className="text-2xl lg:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
@@ -104,7 +104,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/messages"
-                  className=" pageLink relative   hover:bg-[#f5f5f5] p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink relative text-loose  hover:bg-hovermenu  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
                   <div className=" absolute bg-red-700  h-5 min-w-5 max-w-12 border border-white left-0 top-0 ml-4 flex items-center justify-center rounded-full text-white font-semibold text-[10px]">
                     23
@@ -118,7 +118,7 @@ const Nav = () => {
               <li>
                 <NavLink
                   to="/notifications"
-                  className=" pageLink  hover:bg-[#f5f5f5]  p-2 rounded-md text-[#555] flex items-center justify-center gap-2"
+                  className=" pageLink text-loose  hover:bg-hovermenu  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
                   <IoNotifications className="text-2xl lg:text-xl" />
                   <b className="hidden lg:block font-semibold text-sm">
@@ -139,10 +139,10 @@ const Nav = () => {
                 alt=""
               />
             </div>
-            <div className="text-sm font-semibold text-gray-600">
+            <div className="text-sm font-semibold text-loose">
               {user?.name || "Unknown User"}
             </div>
-            <FaCaretDown />
+            <FaCaretDown className="text-loose" />
           </NavLink>
         </div>
       </div>
