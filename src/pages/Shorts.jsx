@@ -73,7 +73,7 @@ const Shorts = () => {
             {/* Overlay Content */}
 
             {/* Action Buttons */}
-            <div className="absolute  bottom-10 flex  ml-[86%] sm:ml-[600px] text-white sm:text-black flex-col gap-5">
+            <div className="absolute  bottom-10 flex  ml-[86%] sm:ml-[600px] text-white sm:text-primary flex-col gap-5">
               <button className=" text-xl flex items-center justify-center flex-col">
                 <AiOutlineFire className="text-2xl" />{" "}
                 <span className="text-sm font-semibold">
@@ -106,19 +106,19 @@ const Shorts = () => {
             <div className=" ">
               <button
                 onClick={() => handleScroll("prev")}
-                className=" text-2xl  bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
+                className=" text-2xl  bg-background w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
                 disabled={currentIndex === 0}
               >
-                <FaAngleUp className="text-2xl" />
+                <FaAngleUp className="text-2xl text-loose" />
               </button>
             </div>
             <div className="">
               <button
                 onClick={() => handleScroll("next")}
-                className=" text-2xl bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
+                className=" text-2xl bg-background w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
                 disabled={currentIndex === shortsData.length - 1}
               >
-                <FaAngleDown className="text-2xl" />
+                <FaAngleDown className="text-2xl text-loose" />
               </button>
             </div>
           </div>

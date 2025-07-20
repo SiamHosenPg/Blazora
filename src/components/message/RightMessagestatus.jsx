@@ -15,9 +15,9 @@ import { MdWork } from "react-icons/md";
 const RightMessagestatus = () => {
   return (
     <div className="">
-      <div className="border-b pb-4 border-df">
+      <div className="border-b pb-4 border-border">
         <div className="block mt-6  overflow-hidden pb-2 text-center w-fit m-auto">
-          <div className=" p-1 border border-df w-24 h-24 rounded-full  bg-white">
+          <div className=" p-1 border border-border w-24 h-24 rounded-full  bg-background">
             <img
               loading="lazy"
               className=" h-full w-full  object-cover  rounded-full  "
@@ -26,9 +26,11 @@ const RightMessagestatus = () => {
             />
           </div>
         </div>
-        <div className="text-center  text-gray-600">
+        <div className="text-center  text-loose">
           <b className="text-base">Siam Hosen</b>
-          <span className="block text-sm">Front end Developer</span>
+          <span className="block text-sm text-secondary">
+            Front end Developer
+          </span>
         </div>
       </div>
 
@@ -36,7 +38,7 @@ const RightMessagestatus = () => {
         {/* About Section Title */}
 
         {/* User Details */}
-        <div className="flex flex-col gap-3 2xl:gap-4 text-[#555] text-sm">
+        <div className="flex flex-col gap-3 2xl:gap-4 text-secondary text-sm">
           {/* Education */}
           <div className="flex items-start gap-1">
             <FaGraduationCap className="text-lg w-[30px] shrink-0" />

@@ -25,11 +25,11 @@ const Nav = () => {
         </div>
         <form
           action=""
-          className="flex items-center justify-between bg-gray-100 rounded-full w-full"
+          className="flex items-center justify-between bg-background-secondary rounded-full w-full"
         >
           <input
             type="text"
-            className=" px-3 py-2 text-sm font-semibold w-full"
+            className=" px-3 py-2 text-sm text-secondary font-semibold w-full"
             placeholder="Search your items here..."
           />
           <button className=" px-2 py-2 rounded-full flex items-center justify-center">
@@ -40,12 +40,12 @@ const Nav = () => {
           to="/menu"
           className="mr-6 flex items-center justify-center shrink-0 "
         >
-          <BsGridFill className="text-xl" />
+          <BsGridFill className="text-xl text-primary" />
         </NavLink>
       </div>
 
       {/* Navigation for larger screens */}
-      <div className=" Navigation w-full bg-background h-[50px]  md:h-[72px] border-df border-b ">
+      <div className=" Navigation w-full bg-background h-[50px]  md:h-[72px] border-border border-b ">
         <div className="Pagearea h-full flex items-center  justify-between ">
           <div className=" items-center justify-start md:w-[30%] lg:w-[20%] gap-2   hidden sm:hidden md:flex ">
             <div className="Logo w-[24px] hidden sm:hidden md:block   text-2xl text-[#444]  font-bold">
@@ -106,7 +106,7 @@ const Nav = () => {
                   to="/messages"
                   className=" pageLink relative text-loose  hover:bg-hovermenu  p-2 rounded-md  flex items-center justify-center gap-2"
                 >
-                  <div className=" absolute bg-red-700  h-5 min-w-5 max-w-12 border border-white left-0 top-0 ml-4 flex items-center justify-center rounded-full text-white font-semibold text-[10px]">
+                  <div className=" absolute bg-red-700  h-5 min-w-5 max-w-12 border border-background left-0 top-0 ml-4 flex items-center justify-center rounded-full text-white font-semibold text-[10px]">
                     23
                   </div>
                   <BiSolidMessageRounded className="text-2xl lg:text-xl" />
@@ -134,7 +134,7 @@ const Nav = () => {
           >
             <div className="image">
               <img
-                className="w-[34px] border border-df h-[34px] rounded-full bg-blue-50"
+                className="w-[34px] border border-border h-[34px] rounded-full bg-blue-50"
                 src={user?.profileimage || "/post/5.jpg"}
                 alt=""
               />

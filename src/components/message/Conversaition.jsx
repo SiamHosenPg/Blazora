@@ -10,7 +10,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 const Conversaition = () => {
   return (
     <div className=" flex h-full flex-col overflow-hidden  justify-between">
-      <div className=" border-b border-df  shrink-0   h-[70px] flex items-center justify-between px-4">
+      <div className=" border-b border-border  shrink-0   h-[70px] flex items-center justify-between px-4">
         <div className="flex items-center gap-2 ">
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img
@@ -21,18 +21,18 @@ const Conversaition = () => {
             />
           </div>
           <div className="">
-            <div className="text-sm font-semibold">Siam Hosen</div>
-            <div className="text-[11px] text-gray-500">Active 2h ago</div>
+            <div className="text-sm font-semibold text-loose">Siam Hosen</div>
+            <div className="text-[11px] text-secondary">Active 2h ago</div>
           </div>
         </div>
         <div className="flex items-center gap-2 justify-end">
-          <button className="bg-white IndexColor p-2 rounded-full flex items-center justify-center">
+          <button className="bg-background text-ascent p-2 rounded-full flex items-center justify-center">
             <IoCallSharp className="text-xl" />
           </button>
-          <button className="bg-white IndexColor p-2 rounded-full flex items-center justify-center">
+          <button className="bg-background text-ascent p-2 rounded-full flex items-center justify-center">
             <FaVideo className="text-xl" />
           </button>
-          <button className="bg-white IndexColor p-2 rounded-full flex items-center justify-center">
+          <button className="bg-background text-ascent p-2 rounded-full flex items-center justify-center">
             <BsFillInfoCircleFill className="text-xl" />
           </button>
         </div>
@@ -44,7 +44,7 @@ const Conversaition = () => {
       </div>
       <div className="h-20 py-3  px-4">
         <form
-          className="w-full bg-gray-100  rounded-md flex justify-between p-2  "
+          className="w-full bg-background-secondary  rounded-md flex justify-between p-2  "
           action=""
         >
           <input
@@ -52,7 +52,7 @@ const Conversaition = () => {
             className="px-3 py-2 w-full outline-none "
             placeholder="Some message for your Follower!"
           />
-          <button className=" bg-white text-gray-600 py-2 px-3 rounded-full flex items-center justify-center">
+          <button className=" bg-background text-secondary py-2 px-3 rounded-full flex items-center justify-center">
             <LuSendHorizontal />
           </button>
         </form>

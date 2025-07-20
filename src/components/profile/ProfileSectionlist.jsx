@@ -9,12 +9,12 @@ const Lists = [
 const ProfileSectionlist = ({ setShowItem }) => {
   return (
     <div>
-      <div className="flex items-center px-6 lg:px-12 py-4 bg-white rounded-lg w-full mb-4 gap-8">
+      <div className="flex items-center px-6 lg:px-12 py-4 bg-background rounded-lg w-full mb-4 gap-8">
         {Lists.map((list) => (
           <div
             onClick={() => setShowItem(list.link)}
             key={list.id}
-            className="text-gray-500  font-semibold text-sm cursor-pointer"
+            className="text-loose  font-semibold text-sm cursor-pointer"
           >
             {list.name}
           </div>

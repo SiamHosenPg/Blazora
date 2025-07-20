@@ -21,8 +21,8 @@ const Lftmgstatus = () => {
             key={index}
             className={` ${
               message.seenstatus
-                ? "bg-white hover:bg-gray-100"
-                : "bg-blue-50 hover:bg-blue-100"
+                ? "bg-background hover:bg-background-secondary"
+                : "bg-blue-900 hover:bg-blue-800"
             }  w-full  flex gap-3 items-center justify-start transition-all  px-4 py-2 rounded-md`}
           >
             {/* User profile image */}
@@ -40,15 +40,15 @@ const Lftmgstatus = () => {
             </div>
             <div className=" w-5/6">
               {/* User name and time */}
-              <h3 className="font-semibold text-sm ">
+              <h3 className="font-semibold text-sm text-primary ">
                 {users ? users.name : "unknown"}
-                <span className="text-gray-600 text-[12px] font-normal ml-1">
+                <span className=" text-[12px] text-tertiary font-normal ml-1">
                   {message.time}
                 </span>
               </h3>
               {/* Message preview */}
               <span
-                className={`  text-sm text-gray-600 w-full block overflow-hidden whitespace-nowrap text-ellipsis truncate ${
+                className={`  text-sm text-secondary w-full block overflow-hidden whitespace-nowrap text-ellipsis truncate ${
                   message.seenstatus ? "font-normal" : "font-medium"
                 }`}
               >

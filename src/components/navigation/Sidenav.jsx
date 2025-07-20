@@ -69,7 +69,7 @@ const Sidenav = ({ user }) => {
       </div>
       {/* shortcut acticity */}
       <div className="p-4 bg-background-secondary rounded-lg mt-3">
-        <div className="flex justify-between items-center pb-3 border-b border-df">
+        <div className="flex justify-between items-center pb-3 border-b border-border">
           <div className="font-semibold text-primary">Shortcut Acticity</div>
           <span className="text-sm text-secondary">Show more</span>
         </div>

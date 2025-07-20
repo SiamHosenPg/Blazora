@@ -20,9 +20,9 @@ const Notifications = () => {
             return (
               <div
                 key={index}
-                className="Profile flex items-start justify-between gap-2 bg-white rounded-lg p-4"
+                className="Profile flex items-start justify-between gap-2 bg-background rounded-lg p-4"
               >
-                <div className="w-12 h-12 shrink-0 rounded-full border-df border flex items-center justify-center">
+                <div className="w-12 h-12 shrink-0 rounded-full border-border border flex items-center justify-center">
                   <img
                     src={item.image}
                     alt=""
@@ -30,15 +30,16 @@ const Notifications = () => {
                   />
                 </div>
                 <div className="w-full">
-                  <span className="block text-sm text-gray-600 ">
-                    <b>{item.title}</b> <span>{item.description}</span>
+                  <span className="block text-sm text-primary">
+                    <b>{item.title}</b>{" "}
+                    <span className="text-secondary">{item.description}</span>
                   </span>
-                  <span className="block text-[11px] text-gray-600">
+                  <span className="block text-[11px] text-tertiary">
                     {item.timestamp}
                   </span>
                 </div>
                 <button className=" shrink-0 mt-1">
-                  <HiDotsVertical className="text-xl text-gray-600 text-center block shrink-0" />
+                  <HiDotsVertical className="text-xl text-secondary text-center block shrink-0" />
                 </button>
               </div>
             );

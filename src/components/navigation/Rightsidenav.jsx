@@ -11,7 +11,7 @@ const Rightsidenav = () => {
     <div className="  overflow-y-auto ScrollSystem w-full h-full px-2  ">
       {/* Suggested Section  */}
       <div className="Suggested  p-3  bg-background-secondary rounded-lg">
-        <div className="flex items-center text-primary p-3 justify-between border-b border-df">
+        <div className="flex items-center text-primary p-3 justify-between border-b border-border">
           <b>Suggested</b>
           <button className="text-sm text-secondary">See all</button>
         </div>
@@ -50,7 +50,7 @@ const Rightsidenav = () => {
 
       {/* News content  */}
       <div className="News px-4 py-4 mt-3 bg-background-secondary rounded-lg">
-        <div className="flex items-center justify-between border-b border-df pb-2">
+        <div className="flex items-center justify-between border-b border-border pb-2">
           <div className="font-bold text-primary">News</div>
           <NavLink to="/news" className="text-sm text-secondary">
             Show more

@@ -13,12 +13,12 @@ import { MdWork } from "react-icons/md";
 
 const ProfileAbout = ({ user }) => {
   return (
-    <div className="flex flex-col gap-6 px-6 lg:px-12 py-6 bg-white rounded-md w-full">
+    <div className="flex flex-col gap-6 px-6 lg:px-12 py-6 bg-background rounded-md w-full">
       {/* About Section Title */}
-      <h2 className="text-lg font-bold text-[#444]">About</h2>
+      <h2 className="text-lg font-bold text-loose">About</h2>
 
       {/* User Details */}
-      <div className="flex flex-col gap-3 2xl:gap-4 text-[#555] text-sm">
+      <div className="flex flex-col gap-3 2xl:gap-4 text-secondary text-sm">
         {/* Education */}
         <div className="flex items-start gap-1">
           <FaGraduationCap className="text-lg w-[30px] shrink-0" />

@@ -4,14 +4,14 @@ const MessageTextpart = () => {
   return (
     <div>
       <div className="block mt-6  overflow-hidden pb-4 text-center w-fit m-auto">
-        <div className="float-left p-1 border border-df w-24 h-24 rounded-full  bg-white">
+        <div className="float-left p-1 border border-border w-24 h-24 rounded-full  bg-background">
           <img
             className=" h-full w-full  object-cover  rounded-full  "
             src="/post/3.jpg"
             alt=""
           />
         </div>
-        <div className="float-left p-1 border border-df w-24 h-24 rounded-full  bg-white  ml-[-30px]">
+        <div className="float-left p-1 border border-border w-24 h-24 rounded-full  bg-background  ml-[-30px]">
           <img
             className=" object-cover  h-full w-full rounded-full   "
             src="/post/7.jpg"
@@ -19,7 +19,7 @@ const MessageTextpart = () => {
           />
         </div>
       </div>
-      <div className="text-center text-sm text-gray-600">
+      <div className="text-center text-sm text-secondary">
         <b>Siam Hosen</b> Start convertion with <b>Rakib Ahmed</b>
       </div>
 
@@ -35,10 +35,10 @@ const MessageTextpart = () => {
                 alt=""
               />
             </div>
-            <div className="text-sm font-semibold">Siam Hosen</div>
-            <span className="text-[12px] text-[#888]">7 july 2012</span>
+            <div className="text-sm font-semibold text-loose">Siam Hosen</div>
+            <span className="text-[12px] text-tertiary">7 july 2012</span>
           </div>
-          <p className="IndexBackground text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-ascent-secondary text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Hey Tamim, I heard you're learning programming? Which language did
             you start with?
           </p>
@@ -53,10 +53,10 @@ const MessageTextpart = () => {
                 alt=""
               />
             </div>
-            <div className="text-sm font-medium">Siam Hosen</div>
-            <span className="text-[12px] text-[#888]">7 july 2012</span>
+            <div className="text-sm font-medium text-loose">Siam Hosen</div>
+            <span className="text-[12px] text-tertiary">7 july 2012</span>
           </div>
-          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
+          <p className="bg-background-secondary text-secondary text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
             Wa Alaikum Assalam! Yeah bro, I started with JavaScript. It’s widely
             used in web development, so I thought it was a good choice.
           </p>
@@ -70,14 +70,14 @@ const MessageTextpart = () => {
                 alt=""
               />
             </div>
-            <div className="text-sm font-medium">Siam Hosen</div>
-            <span className="text-[12px] text-[#888]">7 july 2012</span>
+            <div className="text-sm font-medium text-loose">Siam Hosen</div>
+            <span className="text-[12px] text-tertiary">7 july 2012</span>
           </div>
-          <p className="IndexBackground text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-ascent-secondary text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Nice! JavaScript is really powerful. Are you focusing on frontend or
             backend?
           </p>
-          <p className="IndexBackground text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
+          <p className="bg-ascent-secondary text-white text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tr-none mt-2">
             Always welcome! Keep coding!
           </p>
         </div>
@@ -92,10 +92,10 @@ const MessageTextpart = () => {
                 alt=""
               />
             </div>
-            <div className="text-sm font-medium">Siam Hosen</div>
-            <span className="text-[12px] text-[#888]">7 july 2012</span>
+            <div className="text-sm font-medium text-loose">Siam Hosen</div>
+            <span className="text-[12px] text-tertiary">7 july 2012</span>
           </div>
-          <p className="bg-[#f5f5f5] text-[#333] text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
+          <p className="bg-background-secondary text-secondary text-sm px-5 py-4 w-fit max-w-5/6 rounded-lg rounded-tl-none mt-2">
             Right now, I’m learning frontend. I’m working with React.js. But in
             the future, I want to learn the full MERN stack.
           </p>

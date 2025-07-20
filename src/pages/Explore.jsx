@@ -12,7 +12,7 @@ const Explore = () => {
             <NavLink
               to={`/post/${post.post_id}`}
               key={index}
-              className="bg-white block mb-[2px] md:mb-2 xl:mb-4 border border-df"
+              className="bg-background block mb-[2px] md:mb-2 xl:mb-4 border border-border"
             >
               <img
                 loading="lazy"

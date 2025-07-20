@@ -36,7 +36,7 @@ const PostPrevew = () => {
   return (
     <div className="Pagearea">
       <div className=" mt-0  sm:mt-4  flex flex-col md:flex-row items-start justify-between   gap-6">
-        <div className="leftArea w-full md:w-8/12 h-[calc(100vh_-_110px)] relative flex items-center bg-gray-300 rounded-none sm:rounded-lg overflow-hidden justify-center">
+        <div className="leftArea w-full md:w-8/12 h-[calc(100vh_-_110px)] relative flex items-center bg-background-secondary rounded-none sm:rounded-lg overflow-hidden justify-center">
           <div className=" absolute z-30 left-0 top-0 flex items-center justify-center  gap-3 p-3">
             <button
               onClick={handelBack}
@@ -63,19 +63,19 @@ const PostPrevew = () => {
         </div>
         {/* Right side area */}
         <div className=" w-full md:w-4/12 hidden lg:block ">
-          <div className=" p-4 h-[calc(100vh_-_110px)] bg-white rounded-lg flex flex-col justify-between">
+          <div className=" p-4 h-[calc(100vh_-_110px)] bg-background rounded-lg flex flex-col justify-between">
             <div className=" shrink-0">
               {userData.map((user, index) => {
                 if (user.userid === Foundpost.userid) {
                   return (
                     <div
                       key={index}
-                      className="Profile flex items-center justify-between bg-gray-100 gap-2 px-3 py-2 rounded-lg"
+                      className="Profile flex items-center justify-between bg-background-secondary gap-2 px-3 py-2 rounded-lg"
                     >
                       <div className="flex items-center gap-2">
                         <NavLink
                           to={`/profile/${user.userid}`}
-                          className=" w-12 h-12 rounded-full border-df border flex items-center justify-center overflow-hidden"
+                          className=" w-12 h-12 rounded-full border-border border flex items-center justify-center overflow-hidden"
                         >
                           {" "}
                           <img
@@ -88,11 +88,11 @@ const PostPrevew = () => {
                         <div>
                           <NavLink
                             to={`/profile/${user.userid}`}
-                            className="font-semibold text-gray-700"
+                            className="font-semibold text-primary"
                           >
                             {user.name}
                           </NavLink>
-                          <span className="block text-sm text-gray-600">
+                          <span className="block text-sm text-secondary">
                             {user.bio}
                           </span>
                         </div>
@@ -101,7 +101,7 @@ const PostPrevew = () => {
                         <button className="text-gray-500 hover:text-gray-700">
                           <HiDotsVertical
                             onClick={handleActionBox}
-                            className="text-xl"
+                            className="text-xl text-secondary"
                           />
                         </button>
                         <ActionBoxContent StatusActionBox={StatusActionBox} />
@@ -110,13 +110,13 @@ const PostPrevew = () => {
                   );
                 }
               })}
-              <p className="text-sm font-medium mt-4 px-2 text-gray-600 ">
+              <p className="text-sm font-medium mt-4 px-2 text-secondary ">
                 {Foundpost.text}
               </p>
             </div>
             {/* Comments section */}
             <div className=" mt-4 h-full flex flex-col  overflow-hidden">
-              <b className="block shrink-0 py-2 border-b border-df ">
+              <b className="block shrink-0 py-2 border-b border-border  text-loose">
                 {" "}
                 Comments
               </b>
@@ -130,11 +130,11 @@ const PostPrevew = () => {
               </div>
             </div>
 
-            <div className="  shrink-0 bg-white pt-2  ">
+            <div className="  shrink-0 bg-background pt-2  ">
               {/* Comment input section */}
 
-              <div className=" flex items-center gap-2  py-2 px-3 rounded-lg bg-gray-100">
-                <div className=" w-10 h-10 rounded-full shrink-0 border-df border flex items-center justify-center">
+              <div className=" flex items-center gap-2  py-2 px-3 rounded-lg bg-background-secondary">
+                <div className=" w-10 h-10 rounded-full shrink-0 border-border border flex items-center justify-center">
                   {" "}
                   <img
                     src="/post/2.jpg"
@@ -146,10 +146,10 @@ const PostPrevew = () => {
                 <input
                   type="text"
                   placeholder="Write a comment..."
-                  className="w-full px-4 py-2  rounded-full bg-gray-100 focus:outline-none "
+                  className="w-full px-4 py-2  rounded-full bg-background-secondary focus:outline-none "
                 />
                 <button>
-                  <AiOutlineFire className="text-lg text-[#555]" />{" "}
+                  <AiOutlineFire className="text-lg text-secondary" />{" "}
                   {/* Send button */}
                 </button>
               </div>

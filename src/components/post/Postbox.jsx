@@ -33,7 +33,7 @@ const Postbox = ({ item }) => {
                 className="flex items-center px-4 sm:px-6 justify-between "
               >
                 <div className="left   flex items-center justify-start gap-2 overflow-hidden">
-                  <div className="w-10 h-10 bg-gray-300 sm:w-12 sm:h-12 border-df border shrink-0  rounded-full overflow-hidden ">
+                  <div className="w-10 h-10 bg-gray-300 sm:w-12 sm:h-12 border-border border shrink-0  rounded-full overflow-hidden ">
                     <img
                       loading="lazy"
                       className=" block w-full  h-full object-cover   "
@@ -51,7 +51,7 @@ const Postbox = ({ item }) => {
                       </NavLink>{" "}
                       {/* Hardcoded user name */}
                       <span className="text-sm flex items-center w-fit text-gray-600">
-                        <MdOutlineLocationOn />
+                        <MdOutlineLocationOn className="text-tertiary" />
                         <span className="max-w-[130px] text-secondary text-[12px] sm:text-[13px] sm:max-w-fit text-ellipsis whitespace-nowrap overflow-hidden">
                           {item.location}
                         </span>{" "}

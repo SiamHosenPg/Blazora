@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --color-ascent: #d73502;
+  --color-ascent-secondary: #ff521e;
   --color-primary: #333;
   --color-loose: #555;
   --color-secondary: #666;
@@ -11,11 +13,13 @@
   --color-hovermenu: #f5f5f5;
 }
 .dark {
+  --color-ascent: #d73502;
+  --color-ascent-secondary: #ff521e;
   --color-primary: #f5f5f5;
   --color-loose: #eee;
   --color-secondary: #ccc;
   --color-tertiary: #aaa;
-  --color-border: #444;
+  --color-border: #555;
   --color-background: #333;
   --color-background-secondary: #222;
   --color-hovermenu: #222;

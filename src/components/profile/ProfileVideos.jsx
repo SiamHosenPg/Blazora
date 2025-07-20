@@ -4,10 +4,10 @@ import { FaCirclePlay } from "react-icons/fa6";
 const ProfileVideos = () => {
   return (
     <div>
-      <div className=" px-6 lg:px-12 py-4 bg-white rounded-lg w-full mb-4 gap-8">
-        <h2 className="text-lg font-bold text-[#444]">Videos</h2>
+      <div className=" px-6 lg:px-12 py-4 bg-background rounded-lg w-full mb-4 gap-8">
+        <h2 className="text-lg font-bold text-loose">Videos</h2>
         <div className="grid grid-cols-4 gap-2 lg:gap-5 mt-6">
-          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
+          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-border border">
             <img
               loading="lazy"
               src="/public/post/4.jpg"
@@ -19,7 +19,7 @@ const ProfileVideos = () => {
               <FaCirclePlay />
             </div>
           </div>
-          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
+          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-border border">
             <img
               loading="lazy"
               src="/public/post/4.jpg"
@@ -31,7 +31,7 @@ const ProfileVideos = () => {
               <FaCirclePlay />
             </div>
           </div>
-          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
+          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-border border">
             <img
               loading="lazy"
               src="/public/post/4.jpg"
@@ -43,7 +43,7 @@ const ProfileVideos = () => {
               <FaCirclePlay />
             </div>
           </div>
-          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
+          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-border border">
             <img
               loading="lazy"
               src="/public/post/4.jpg"
@@ -55,7 +55,7 @@ const ProfileVideos = () => {
               <FaCirclePlay />
             </div>
           </div>
-          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-df border">
+          <div className="w-full flex items-center justify-center rounded-md overflow-hidden border-border border">
             <img
               src="/public/post/4.jpg"
               className=" aspect-square rounded-md"
