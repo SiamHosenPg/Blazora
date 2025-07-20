@@ -8,7 +8,7 @@ const Storybox = () => {
   if (loading)
     return (
       <div>
-        <div className="flex w-[100%] items-center gap-4 mb-2 sm:mb-4 bg-white rounded-lg py-3 sm:py-4 px-6 overflow-hidden scrollbar-hide">
+        <div className="flex w-[100%] items-center gap-4 mb-2 sm:mb-4 bg-white rounded-none sm:rounded-lg py-3 sm:py-4 px-6 overflow-hidden scrollbar-hide">
           <div className=" shrink-0">
             <div className=" bg-gray-100 rounded-full w-12 sm:w-14 h-12 sm:h-14 shrink-0  animate-pulse"></div>
 
