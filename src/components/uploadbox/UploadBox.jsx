@@ -24,7 +24,7 @@ const UploadBox = ({ user }) => {
           />
         </form>
       </div>
-      <div className="flex items-center justify-between w-full gap-4 font-medium ">
+      <div className="flex items-center justify-between w-full gap-4 font-semibold ">
         <button className="w-2/6 flex items-center justify-center gap-2   py-2 rounded-lg hover:bg-background-secondary transition duration-200 ease-in-out ">
           <FaImages className="text-xl text-blue-600" />{" "}
           <span className="text-sm sm:text-base overflow-hidden whitespace-nowrap text-loose text-ellipsis truncate ">

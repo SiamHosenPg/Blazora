@@ -7,6 +7,8 @@ import { MdBookmarkBorder } from "react-icons/md"; // Icon for bookmark
 import { LuSendHorizontal } from "react-icons/lu"; // Icon for send button
 import { MdOutlinePublic } from "react-icons/md"; // Icon for public visibility
 import { MdOutlineLocationOn } from "react-icons/md"; // Icon for location
+import { FaRegComments } from "react-icons/fa"; // Icon for comments (not used here)
+import { RiShareForwardLine } from "react-icons/ri"; // Icon for share (not used here)
 import { NavLink } from "react-router-dom";
 
 const Postbox = ({ item }) => {
@@ -65,7 +67,7 @@ const Postbox = ({ item }) => {
                   </div>
                 </div>
                 <button>
-                  <BsThreeDotsVertical className="text-xl text-secondary" />{" "}
+                  <BsThreeDotsVertical className="text-xl text-secondary" />
                   {/* Menu button */}
                 </button>
               </div>
@@ -92,45 +94,75 @@ const Postbox = ({ item }) => {
       {/* Engagement section (likes, comments, shares) */}
       {item.engagement.map((count, index) => {
         return (
-          <div
-            key={index}
-            className="px-4 sm:px-6 flex items-center justify-between mt-4 pb-3   "
-          >
-            <div className="left flex items-center justify-start gap-4">
-              {/* Likes */}
-              <div className="flex gap-1 items-center cursor-pointer">
-                <AiOutlineFire className="text-xl text-primary sm:text-2xl " />
-                <span className="font-semibold text-primary">
-                  {count.like_count}
-                </span>{" "}
-                {/* Like count */}
-                <div className="text-sm text-secondary">Hot</div>
+          <div key={index} className="  ">
+            <div className="px-4 sm:px-6 py-3 mt-2 text-sm border-b border-border flex items-center justify-start gap-3">
+              <div className="text-xl flex items-center gap-1">
+                <AiFillFire className=" text-ascent" />
+                <span className="block text-[13px] text-secondary">
+                  <span className="text-primary font-semibold">
+                    {" "}
+                    {count.like_count}
+                  </span>{" "}
+                  Hot
+                </span>
               </div>
-              {/* Comments */}
-              <div
-                onClick={() => HandelComments(item.post_id)}
-                className="flex gap-1 items-center cursor-pointer"
-              >
-                <span className="font-semibold text-primary">
-                  {count.comments_count}
-                </span>{" "}
-                {/* Comments count */}
-                <div className="text-sm text-secondary">Comments</div>
+              <div className="text-xl flex items-center gap-1">
+                <span className="block text-[13px] text-secondary">
+                  <span className="text-primary font-semibold">
+                    {" "}
+                    {count.comments_count}
+                  </span>{" "}
+                  Comments
+                </span>
               </div>
-              {/* Shares */}
-              <div className="flex gap-1 items-center cursor-pointer">
-                <span className="font-semibold text-primary">
-                  {count.shares_count}
-                </span>{" "}
-                {/* Shares count */}
-                <div className="text-sm text-secondary">Shear</div>{" "}
-                {/* Typo: Should be "Share" */}
+              <div className="text-xl flex items-center gap-1">
+                <span className="block text-[13px] text-secondary">
+                  <span className="text-primary font-semibold">
+                    {count.shares_count}
+                  </span>{" "}
+                  Share
+                </span>
               </div>
             </div>
-            <button>
-              <MdBookmarkBorder className="text-xl text-secondary" />{" "}
-              {/* Bookmark button */}
-            </button>
+            <div className="px-4 sm:px-6 flex items-center justify-between mt-4 pb-3 ">
+              <div className="left flex items-center justify-start gap-10">
+                {/* Likes */}
+                <div className="flex gap-1 items-center cursor-pointer">
+                  <AiOutlineFire className="text-xl text-primary sm:text-2xl " />
+                  <span className="font-semibold text-primary"></span>{" "}
+                  {/* Like count */}
+                  <div className="text-sm text-primary font-semibold">Hot</div>
+                </div>
+                {/* Comments */}
+                <div
+                  onClick={() => HandelComments(item.post_id)}
+                  className="flex gap-1 items-center cursor-pointer"
+                >
+                  <span className="font-semibold text-primary">
+                    <FaRegComments className="text-xl" />
+                  </span>{" "}
+                  {/* Comments count */}
+                  <div className="text-sm text-primary font-semibold">
+                    Comments
+                  </div>
+                </div>
+                {/* Shares */}
+                <div className="flex gap-1 items-center cursor-pointer">
+                  <span className="font-semibold text-primary">
+                    <RiShareForwardLine className="text-xl" />
+                  </span>{" "}
+                  {/* Shares count */}
+                  <div className="text-sm text-primary font-semibold">
+                    Share
+                  </div>{" "}
+                  {/* Typo: Should be "Share" */}
+                </div>
+              </div>
+              <button>
+                <MdBookmarkBorder className="text-xl text-secondary" />{" "}
+                {/* Bookmark button */}
+              </button>
+            </div>
           </div>
         );
       })}
