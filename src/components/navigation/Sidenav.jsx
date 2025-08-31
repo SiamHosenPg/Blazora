@@ -2,6 +2,8 @@ import React from "react";
 import { Leftnavigationlist } from "./Navlist";
 import { HiCheckBadge } from "react-icons/hi2";
 import { NavLink } from "react-router-dom";
+import { LuSun } from "react-icons/lu";
+import { FiMoon } from "react-icons/fi";
 import { useDarkMode } from "../../hook/Darkmood";
 
 const Sidenav = ({ user }) => {
@@ -50,7 +52,13 @@ const Sidenav = ({ user }) => {
           onClick={toggleDarkMode}
           className=" text-primary flex gap-4 mt-1 mb-1 items-center px-5 py-2 hover:bg-background rounded-lg "
         >
-          <h4 className="">Theme</h4>
+          <div>Theme</div>
+          <div className="ml-auto cursor-pointer"></div>
+          {darkMode ? (
+            <FiMoon className=" text-lg" />
+          ) : (
+            <LuSun className=" text-lg" />
+          )}
         </div>
         {Leftnavigationlist.map((list, index) => {
           return (
