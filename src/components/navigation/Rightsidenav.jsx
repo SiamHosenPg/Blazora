@@ -40,7 +40,7 @@ const Rightsidenav = () => {
                     </div>
                   </div>
                   <button className="text-sm IndexColor font-semibold">
-                    Folow
+                    Follow
                   </button>
                 </NavLink>
               );
